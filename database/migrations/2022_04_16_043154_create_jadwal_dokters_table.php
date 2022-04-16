@@ -15,6 +15,10 @@ class CreateJadwalDoktersTable extends Migration
     {
         Schema::create('jadwal_dokters', function (Blueprint $table) {
             $table->id();
+            $table->string('name_dokter');
+            $table->string('hari_praktik');
+            $table->datetime('waktu_mulai');
+            $table->datetime('waktu_selesai');
             $table->timestamps();
         });
     }
