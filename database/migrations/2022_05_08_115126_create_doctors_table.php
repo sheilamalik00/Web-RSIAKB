@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateJadwalDoktersTable extends Migration
+class CreateDoctorsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateJadwalDoktersTable extends Migration
      */
     public function up()
     {
-        Schema::create('jadwal_dokters', function (Blueprint $table) {
+        Schema::create('doctors', function (Blueprint $table) {
             $table->id();
-            $table->string('name_dokter');
-            $table->string('hari_praktik');
-            $table->datetime('waktu_mulai');
-            $table->datetime('waktu_selesai');
+            $table->string('name');
+            $table->string('specialist_doctor_id');
+            $table->string('image');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateJadwalDoktersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jadwal_dokters');
+        Schema::dropIfExists('doctors');
     }
 }

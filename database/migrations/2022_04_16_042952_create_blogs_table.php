@@ -15,9 +15,16 @@ class CreateBlogsTable extends Migration
     {
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
-            $table->text('judul_konten')->nullable();;
-            $table->text('isi_konten');
-            $table->date('tanggal_konten');
+            // $table->text('judul_konten')->nullable();;
+            // $table->text('isi_konten');
+            // $table->date('tanggal_konten');
+            $table->string('title');
+            $table->string('slug');
+            $table->longText('content');
+            $table->string('short description');
+            $table->date('date_published');
+            $table->string('category_blog_id');
+            $table->string('image');
             $table->timestamps();
         });
     }
