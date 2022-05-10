@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Create Spesialist</h1>
+            <h1>Create Category Blog</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -31,12 +31,24 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="{{route('spesialist.store')}}" method="POST" enctype="multipart/form-data">
+              <form action="{{route('category.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
                     <input name="name" type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Nama Kategori">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputFile">Image</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input name="icon" type="file" class="custom-file-input" id="exampleInputFile">
+                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                      </div>
+                      <div class="input-group-append">
+                        <span class="input-group-text">Upload</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <!-- /.card-body -->

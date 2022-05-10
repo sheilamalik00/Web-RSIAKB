@@ -25,3 +25,8 @@ Route::view('/', 'frontend.home.index');
 
 
 Route::resource('/admin/category', App\Http\Controllers\Backend\Blog\CategoryBlogControllers::class);
+Route::resource('/admin/blog', App\Http\Controllers\Backend\Blog\BlogControllers::class);
+
+//spesialist
+Route::resource('/admin/spesialist', App\Http\Controllers\Backend\Doctor\SpecialistDoctorControllers::class);
+Route::resource('/admin/doctor', App\Http\Controllers\Backend\Doctor\DoctorControllers::class);
