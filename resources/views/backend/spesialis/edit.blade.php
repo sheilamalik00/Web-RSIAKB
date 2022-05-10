@@ -31,7 +31,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="{{route('spesialist.update',$spesialist->id)}}" method="POST" enctype="multipart/form-data">
+              <form action="{{route('admin.spesialist.update',$spesialist->id)}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div class="card-body">

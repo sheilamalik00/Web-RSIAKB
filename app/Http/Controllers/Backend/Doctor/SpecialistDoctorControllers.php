@@ -23,9 +23,9 @@ class SpecialistDoctorControllers extends Controller
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
                     //form delete
-                    $formdelete = '<form action="' . route('spesialist.destroy', $row->id) . '" method="POST">' . csrf_field() . method_field("DELETE") . '<button type="submit" class="btn btn-danger btn-sm" onclick="return confirm(\'Apakah anda yakin ingin menghapus data ini?\')"><i class="fa fa-trash"></i> Hapus</button></form>';
+                    $formdelete = '<form action="' . route('admin.spesialist.destroy', $row->id) . '" method="POST">' . csrf_field() . method_field("DELETE") . '<button type="submit" class="btn btn-danger btn-sm" onclick="return confirm(\'Apakah anda yakin ingin menghapus data ini?\')"><i class="fa fa-trash"></i> Hapus</button></form>';
                     //form edit
-                    $formedit = '<a href="' . route('spesialist.edit', $row->id) . '" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Edit</a>';
+                    $formedit = '<a href="' . route('admin.spesialist.edit', $row->id) . '" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Edit</a>';
                     $btn = $formedit . '
                         <br/>
                         ' . $formdelete . '';
@@ -64,9 +64,9 @@ class SpecialistDoctorControllers extends Controller
             'slug' => Str::slug($request->name),
         ]);
         if($spesialist){
-            return redirect()->route('spesialist.index')->with('success', 'Data berhasil ditambahkan');
+            return redirect()->route('admin.spesialist.index')->with('success', 'Data berhasil ditambahkan');
         }else{
-            return redirect()->route('spesialist.index')->with('error', 'Data gagal ditambahkan');
+            return redirect()->route('admin.spesialist.index')->with('error', 'Data gagal ditambahkan');
         }
     }
 
@@ -111,9 +111,9 @@ class SpecialistDoctorControllers extends Controller
             'slug' => Str::slug($request->name),
         ]);
         if($spesialist){
-            return redirect()->route('spesialist.index')->with('success', 'Data berhasil diubah');
+            return redirect()->route('admin.spesialist.index')->with('success', 'Data berhasil diubah');
         }else{
-            return redirect()->route('spesialist.index')->with('error', 'Data gagal diubah');
+            return redirect()->route('admin.spesialist.index')->with('error', 'Data gagal diubah');
         }
     }
 
@@ -128,9 +128,9 @@ class SpecialistDoctorControllers extends Controller
         $spesialist = SpecialistDoctor::find($id);
         $spesialist = $spesialist->delete();
         if($spesialist){
-            return redirect()->route('spesialist.index')->with('success', 'Data berhasil dihapus');
+            return redirect()->route('admin.spesialist.index')->with('success', 'Data berhasil dihapus');
         }else{
-            return redirect()->route('spesialist.index')->with('error', 'Data gagal dihapus');
+            return redirect()->route('admin.spesialist.index')->with('error', 'Data gagal dihapus');
         }
     }
 }

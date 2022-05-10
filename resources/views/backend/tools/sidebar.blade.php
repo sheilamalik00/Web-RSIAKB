@@ -34,7 +34,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{route('admin.blog.index')}}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Blog
@@ -43,7 +43,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Category
@@ -53,13 +53,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{route('admin.category.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Category Blog</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{route('admin.spesialist.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Spesialist Doctor</p>
                   {{-- <span class="badge badge-info right">Comming Soon</span> --}}
@@ -68,7 +68,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{route('admin.doctor.index')}}" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Doctor
@@ -86,7 +86,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{route('admin.schedule.index')}}" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Schedule

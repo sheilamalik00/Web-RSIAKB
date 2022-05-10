@@ -19,14 +19,29 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::view('/', 'frontend.home.index');
+// Route::view('/', 'frontend.home.index');
 
 
-Route::resource('/admin/category', App\Http\Controllers\Backend\Blog\CategoryBlogControllers::class);
-Route::resource('/admin/blog', App\Http\Controllers\Backend\Blog\BlogControllers::class);
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::resource('category', App\Http\Controllers\Backend\Blog\CategoryBlogControllers::class);
+    Route::resource('blog', App\Http\Controllers\Backend\Blog\BlogControllers::class);
 
-//spesialist
-Route::resource('/admin/spesialist', App\Http\Controllers\Backend\Doctor\SpecialistDoctorControllers::class);
-Route::resource('/admin/doctor', App\Http\Controllers\Backend\Doctor\DoctorControllers::class);
+    //spesialist
+    Route::resource('spesialist', App\Http\Controllers\Backend\Doctor\SpecialistDoctorControllers::class);
+    Route::resource('doctor', App\Http\Controllers\Backend\Doctor\DoctorControllers::class);
+    Route::resource('schedule', App\Http\Controllers\Backend\Doctor\ScheduleDoctorControllers::class);
+
+});
+//frontend
+Route::get('/blog', [App\Http\Controllers\Frontend\Blog\IndexControllers::class, 'index'])->name('blog.index');
+Route::get('/blog/{slug}', [App\Http\Controllers\Frontend\Blog\IndexControllers::class, 'show'])->name('blog.show');
+Route::get('/doctor', [App\Http\Controllers\Frontend\Doctor\IndexControllers::class, 'index'])->name('doctor.index');
+Route::get('/', [App\Http\Controllers\Frontend\Home\IndexControllers::class, 'index'])->name('home.index');
+// about
+Route::get('/about', [App\Http\Controllers\Frontend\About\IndexControllers::class, 'index'])->name('about.index');
+// contact
+Route::get('/contact', [App\Http\Controllers\Frontend\Contact\IndexControllers::class, 'index'])->name('contact.index');
+// gallery
+Route::get('/gallery', [App\Http\Controllers\Frontend\Gallery\IndexControllers::class, 'index'])->name('gallery.index');

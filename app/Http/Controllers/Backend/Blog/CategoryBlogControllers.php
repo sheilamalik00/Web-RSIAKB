@@ -23,9 +23,9 @@ class CategoryBlogControllers extends Controller
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
                     //form delete
-                    $formdelete = '<form action="' . route('category.destroy', $row->id) . '" method="POST">' . csrf_field() . method_field("DELETE") . '<button type="submit" class="btn btn-danger btn-sm" onclick="return confirm(\'Apakah anda yakin ingin menghapus data ini?\')"><i class="fa fa-trash"></i> Hapus</button></form>';
+                    $formdelete = '<form action="' . route('admin.category.destroy', $row->id) . '" method="POST">' . csrf_field() . method_field("DELETE") . '<button type="submit" class="btn btn-danger btn-sm" onclick="return confirm(\'Apakah anda yakin ingin menghapus data ini?\')"><i class="fa fa-trash"></i> Hapus</button></form>';
                     //form edit
-                    $formedit = '<a href="' . route('category.edit', $row->id) . '" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Edit</a>';
+                    $formedit = '<a href="' . route('admin.category.edit', $row->id) . '" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Edit</a>';
                     $btn = $formedit . '
                         <br/>
                         ' . $formdelete . '';
@@ -64,9 +64,9 @@ class CategoryBlogControllers extends Controller
             'slug' => Str::slug($request->name),
         ]);
         if($category){
-            return redirect()->route('category.index')->with('success', 'Category created successfully');
+            return redirect()->route('admin.category.index')->with('success', 'Category created successfully');
         }else{
-            return redirect()->route('category.index')->with('error', 'Category created failed');
+            return redirect()->route('admin.category.index')->with('error', 'Category created failed');
         }
     }
 
@@ -111,9 +111,9 @@ class CategoryBlogControllers extends Controller
             'slug' => Str::slug($request->name)
         ]);
         if($category){
-            return redirect()->route('category.index')->with('success', 'Category updated successfully');
+            return redirect()->route('admin.category.index')->with('success', 'Category updated successfully');
         }else{
-            return redirect()->route('category.index')->with('error', 'Category updated failed');
+            return redirect()->route('admin.category.index')->with('error', 'Category updated failed');
         }
     }
 
@@ -128,9 +128,9 @@ class CategoryBlogControllers extends Controller
         $category = CategoryBlog::find($id);
         $category->delete();
         if($category){
-            return redirect()->route('category.index')->with('success', 'Category deleted successfully');
+            return redirect()->route('admin.category.index')->with('success', 'Category deleted successfully');
         }else{
-            return redirect()->route('category.index')->with('error', 'Category deleted failed');
+            return redirect()->route('admin.category.index')->with('error', 'Category deleted failed');
         }
     }
 }
