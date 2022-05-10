@@ -15,9 +15,8 @@ class CreateCategoryBlogsTable extends Migration
     {
         Schema::create('category_blogs', function (Blueprint $table) {
             $table->id();
-            $table->string('doctor_id');
-            $table->string('practice day');
-            $table->string('practice time');
+            $table->string('name');
+            $table->string('slug');
             $table->timestamps();
         });
     }

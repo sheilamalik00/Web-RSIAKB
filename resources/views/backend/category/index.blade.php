@@ -1,4 +1,4 @@
-@extends('admin.master')
+@extends('backend.master')
 
 @section('content')
   <div class="content-wrapper">
@@ -7,12 +7,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data Kategori Artikel</h1>
+            <h1>Data Category Blog</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Data Kategori Artikel</li>
+              <li class="breadcrumb-item active">Data Category Blog</li>
             </ol>
           </div>
         </div>
@@ -27,12 +27,12 @@
             <!-- /.card -->
             <div class="card">
                 <div class="card-header">
-                <a href="{{route('kategori-artikel.create')}}" class="btn btn-sm btn-success">Tambah Data</a>
+                <a href="{{route('category.create')}}" class="btn btn-sm btn-success">Tambah Data</a>
                 </div>
             </div>
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Data Kategori</h3>
+                <h3 class="card-title">Data Category</h3>
                 {{-- <br/> --}}
                 {{-- <a href="{{route('DataPura.create')}}" class="btn btn-sm btn-success">Tambah Data</a> --}}
               </div>
@@ -120,16 +120,16 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
   <script>
-    //message with toastr
-    @if (session()->has('success'))
+    // //message with toastr
+    // @if (session()->has('success'))
 
-      toastr.success('{{ session('success') }}', 'BERHASIL!');
+    //   toastr.success('{{ session('success') }}', 'BERHASIL!');
 
-    @elseif(session()->has('error'))
+    // @elseif(session()->has('error'))
 
-      toastr.error('{{ session('error') }}', 'GAGAL!');
+    //   toastr.error('{{ session('error') }}', 'GAGAL!');
 
-    @endif
+    // @endif
   </script>
   <script type="text/javascript">
     $(function() {
@@ -140,21 +140,17 @@
         language: {
           processing: '<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span> '
         },
-        ajax: "{{ route('kategori-artikel.index') }}",
+        ajax: "{{ route('category.index') }}",
         columns: [
           // {data: 'id', name: 'id'},
           {
-            data: 'nama_kategori',
-            name: 'nama_kategori'
+            data: 'name',
+            name: 'name'
           },
           {
             data: 'slug',
             name: 'slug'
           },
-        //   {
-        //     data: 'icon',
-        //     name: 'icon'
-        //   },
           {
             data: 'action',
             name: 'action',
@@ -165,23 +161,6 @@
       });
 
     });
-  </script>
-  <script>
-    //   $(function () {
-    //     $("#example1").DataTable({
-    //       "responsive": true, "lengthChange": false, "autoWidth": false,
-    //       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-    //     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-    //     $('#example2').DataTable({
-    //       "paging": true,
-    //       "lengthChange": false,
-    //       "searching": false,
-    //       "ordering": true,
-    //       "info": true,
-    //       "autoWidth": false,
-    //       "responsive": true,
-    //     });
-    //   });
   </script>
 @endsection
 

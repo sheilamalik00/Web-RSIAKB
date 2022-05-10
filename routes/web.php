@@ -22,3 +22,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::view('/', 'frontend.home.index');
+
+
+Route::resource('/admin/category', App\Http\Controllers\Backend\Blog\CategoryBlogControllers::class);
