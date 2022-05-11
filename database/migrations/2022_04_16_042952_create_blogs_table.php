@@ -21,7 +21,7 @@ class CreateBlogsTable extends Migration
             $table->string('title');
             $table->string('slug');
             $table->longText('content');
-            $table->string('short description');
+            $table->string('short_description');
             $table->date('date_published');
             $table->string('category_blog_id');
             $table->string('image')->nullable();

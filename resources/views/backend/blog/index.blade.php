@@ -147,8 +147,8 @@
         columns: [
           // {data: 'id', name: 'id'},
           {
-            data: 'name',
-            name: 'nama_artikel'
+            data: 'title',
+            name: 'title'
           },
           {
             data: 'slug',

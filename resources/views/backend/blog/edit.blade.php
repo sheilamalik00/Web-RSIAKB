@@ -1,4 +1,4 @@
-@extends('admin.master')
+@extends('backend.master')
 @section('content')
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -44,12 +44,11 @@
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Category</label>
-                        {{-- <input name="nama" type="text" class="form-control" id="exampleInputEmail1"
-                          placeholder="Judul Artikel"> --}}
                         <select name="category" class="form-control select2" style="width: 100%;">
                           <option selected="selected" value="">Choose</option>
                           @foreach ($category as $item)
-                            <option value="{{ $item->id }}">{{ $item->nama }}</option>
+                            <option value="{{ $item->id }}" {{ $blog->category_blog_id == $item->id ? 'selected' : '' }}>{{ $item->name }}</option>
+                            {{-- <option value="{{ $item->id }}">{{ $item->nama }}</option> --}}
                           @endforeach
                         </select>
                       </div>
@@ -76,9 +75,6 @@
                           <option value="0">Pending</option>
                           <option value="2">Save</option>
                           <option value="1">Publish</option>
-                          {{-- @foreach ($kategori as $item)
-                                <option value="{{$item->id}}">{{$item->nama}}</option>
-                            @endforeach --}}
                         </select>
                       </div>
                     </div>
@@ -86,12 +82,16 @@
                   <div class="col-12">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Short Description</label>
-                      <textarea name="short_description" class="form-control" id="exampleInputEmail1" placeholder="Isi Artikel">{{$blog->short description}}</textarea>
+                      <textarea name="short_description" class="form-control" id="exampleInputEmail1" placeholder="">
+                          {{$blog->short_description}}
+                        </textarea>
                     </div>
                     <div class="form-group">
                       <label>Content</label>
                       <textarea class="isiArtikel @error('content') is-invalid @enderror" name="content"
-                        style="width: 100%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">{!! $blog->content !!}</textarea>
+                        style="width: 100%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                        {!! $blog->content !!}
+                    </textarea>
                       @error('detail')
                         <div class="alert alert-danger mt-2">
                           {{ $message }}
@@ -123,7 +123,7 @@
 
 @section('scriptJs')
   <!-- Summernote -->
-  <script src="{{ asset('assets/backend/plugins/summernote/summernote-bs4.min.js') }}"></script>
+  <script src="{{ asset('asset/backend/plugins/summernote/summernote-bs4.min.js') }}"></script>
   <script>
     $(function() {
       //note
@@ -134,5 +134,5 @@
 
 @section('scriptCss')
   <!-- Summernote -->
-  <link rel="stylesheet" href="{{ asset('assets/backend/plugins/summernote/summernote-bs4.css') }}">
+  <link rel="stylesheet" href="{{ asset('asset/backend/plugins/summernote/summernote-bs4.css') }}">
 @endsection

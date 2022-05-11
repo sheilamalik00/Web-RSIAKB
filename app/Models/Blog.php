@@ -12,7 +12,7 @@ class Blog extends Model
         'title',
         'slug',
         'content',
-        'short description',
+        'short_description',
         'date_published',
         'image',
         'category_blog_id',

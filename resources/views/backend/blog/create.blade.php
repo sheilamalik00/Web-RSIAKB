@@ -48,7 +48,7 @@
                         <select name="category" class="form-control select2" style="width: 100%;">
                           <option selected="selected" value="">Choose</option>
                           @foreach ($category as $item)
-                            <option value="{{ $item->id }}">{{ $item->nama }}</option>
+                            <option value="{{ $item->id }}">{{ $item->name }}</option>
                           @endforeach
                         </select>
                       </div>
@@ -122,7 +122,7 @@
 
 @section('scriptJs')
   <!-- Summernote -->
-  <script src="{{ asset('assets/backend/plugins/summernote/summernote-bs4.min.js') }}"></script>
+  <script src="{{ asset('asset/backend/plugins/summernote/summernote-bs4.min.js') }}"></script>
   <script>
     $(function() {
       //note
@@ -133,5 +133,5 @@
 
 @section('scriptCss')
   <!-- Summernote -->
-  <link rel="stylesheet" href="{{ asset('assets/backend/plugins/summernote/summernote-bs4.css') }}">
+  <link rel="stylesheet" href="{{ asset('asset/backend/plugins/summernote/summernote-bs4.css') }}">
 @endsection

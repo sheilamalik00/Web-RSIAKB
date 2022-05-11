@@ -62,7 +62,7 @@ class BlogControllers extends Controller
         $this->validate($request, [
             'title' => 'required|string|max:255',
             'content' => 'required|string',
-            'category_id' => 'required|integer',
+            'category' => 'required|integer',
             'short_description' => 'required|string',
             
             // 'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -70,7 +70,7 @@ class BlogControllers extends Controller
         $blog = Blog::create([
             'title' => $request->title,
             'content' => $request->content,
-            'category_blog_id' => $request->category_id,
+            'category_blog_id' => $request->category,
             'short_description' => $request->short_description,
             'slug' => Str::slug($request->title),
             'date_published' => now(),
