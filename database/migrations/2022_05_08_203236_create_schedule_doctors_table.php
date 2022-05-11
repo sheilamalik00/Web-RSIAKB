@@ -16,8 +16,8 @@ class CreateScheduleDoctorsTable extends Migration
         Schema::create('schedule_doctors', function (Blueprint $table) {
             $table->id();
             $table->string('doctor_id');
-            $table->string('practice day');
-            $table->string('practice time');
+            $table->string('practice_day');
+            $table->string('practice_time');
             $table->timestamps();
         });
     }

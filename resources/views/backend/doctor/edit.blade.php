@@ -31,12 +31,13 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="{{route('category.store')}}" method="POST" enctype="multipart/form-data">
+              <form action="{{route('admin.doctor.update',$doctor->id)}}" method="POST" enctype="multipart/form-data">
                 @csrf
+                @method('PUT')
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
-                    <input name="name" type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Nama Kategori">
+                    <input name="name" value="{{old('name',$doctor->name)}}" type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Nama Kategori">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputFile">Image</label>

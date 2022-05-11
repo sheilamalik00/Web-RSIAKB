@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Blog extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'title',
+        'slug',
+        'content',
+        'short description',
+        'date_published',
+        'image',
+        'category_blog_id',
+        'status',
+    ];
 }

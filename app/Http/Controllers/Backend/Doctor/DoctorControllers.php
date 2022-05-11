@@ -35,6 +35,7 @@ class DoctorControllers extends Controller
                 ->rawColumns(['action'])
                 ->make(true);
         }
+        return view('backend.doctor.index');
     }
 
     /**

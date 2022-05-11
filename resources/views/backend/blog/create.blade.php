@@ -6,12 +6,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Tambah Artikel</h1>
+            <h1>Add Blog</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Data Artikel</li>
+              <li class="breadcrumb-item active">Data Blog</li>
             </ol>
           </div>
         </div>
@@ -31,34 +31,34 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="{{ route('artikel.store') }}" method="POST" enctype="multipart/form-data">
+              <form action="{{ route('admin.blog.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="card-body">
                   <div class="row">
                     <div class="col-6">
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Judul</label>
-                        <input name="judul" type="text" class="form-control" id="exampleInputEmail1"
+                        <label for="exampleInputEmail1">Title</label>
+                        <input name="title" type="text" class="form-control" id="exampleInputEmail1"
                           placeholder="Judul Artikel">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Kategori</label>
+                        <label for="exampleInputEmail1">Category</label>
                         {{-- <input name="nama" type="text" class="form-control" id="exampleInputEmail1"
                           placeholder="Judul Artikel"> --}}
-                        <select name="kategori" class="form-control select2" style="width: 100%;">
-                          <option selected="selected" value="">Pilihan</option>
-                          @foreach ($kategori as $item)
-                            <option value="{{ $item->id }}">{{ $item->nama_kategori }}</option>
+                        <select name="category" class="form-control select2" style="width: 100%;">
+                          <option selected="selected" value="">Choose</option>
+                          @foreach ($category as $item)
+                            <option value="{{ $item->id }}">{{ $item->nama }}</option>
                           @endforeach
                         </select>
                       </div>
                     </div>
                     <div class="col-6">
                       <div class="form-group">
-                        <label for="exampleInputFile">Gambar</label>
+                        <label for="exampleInputFile">Image</label>
                         <div class="input-group">
                           <div class="custom-file">
-                            <input name="foto" type="file" class="custom-file-input" id="exampleInputFile">
+                            <input name="image" type="file" class="custom-file-input" id="exampleInputFile">
                             <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                           </div>
                           <div class="input-group-append">
@@ -71,9 +71,9 @@
                         {{-- <input name="nama" type="text" class="form-control" id="exampleInputEmail1"
                           placeholder="Judul Artikel"> --}}
                         <select name="status" class="form-control select2" style="width: 100%;">
-                          <option selected="selected" value="">Pilihan</option>
+                          <option selected="selected" value="">choose</option>
                           <option value="0">Pending</option>
-                          <option value="2">Simpan</option>
+                          <option value="2">Save</option>
                           <option value="1">Publish</option>
                           {{-- @foreach ($kategori as $item)
                                 <option value="{{$item->id}}">{{$item->nama}}</option>
@@ -83,14 +83,13 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    {{-- //isisingkat --}}
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Ringkasan</label>
-                      <textarea name="isi_singkat" class="form-control" id="exampleInputEmail1" placeholder="Isi Artikel"></textarea>
+                      <label for="exampleInputEmail1">Short Description</label>
+                      <textarea name="short_description" class="form-control" id="exampleInputEmail1" placeholder="Isi Artikel"></textarea>
                     </div>
                     <div class="form-group">
-                      <label>Isi Artikel</label>
-                      <textarea class="isiArtikel @error('detail') is-invalid @enderror" name="detail"
+                      <label>Content</label>
+                      <textarea class="isiArtikel @error('content') is-invalid @enderror" name="content"
                         style="width: 100%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                       @error('detail')
                         <div class="alert alert-danger mt-2">
