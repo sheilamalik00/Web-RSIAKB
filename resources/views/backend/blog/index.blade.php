@@ -1,4 +1,4 @@
-@extends('admin.master')
+@extends('backend.master')
 
 @section('content')
   <div class="content-wrapper">
@@ -7,12 +7,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data Artikel</h1>
+            <h1>Data Blog</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Data Artikel</li>
+              <li class="breadcrumb-item active">Data Blog</li>
             </ol>
           </div>
         </div>
@@ -27,12 +27,12 @@
             <!-- /.card -->
             <div class="card">
               <div class="card-header">
-                <a href="{{ route('artikel.create') }}" class="btn btn-sm btn-success">Tambah Data</a>
+                <a href="{{ route('admin.blog.create') }}" class="btn btn-sm btn-success">Tambah Data</a>
               </div>
             </div>
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Data Artikel</h3>
+                <h3 class="card-title">Data Blog</h3>
                 {{-- <br/> --}}
                 {{-- <a href="{{route('DataPura.create')}}" class="btn btn-sm btn-success">Tambah Data</a> --}}
               </div>
@@ -46,9 +46,9 @@
                   <thead>
                     <tr>
                       {{-- <th>No</th> --}}
-                      <th>Nama</th>
+                      <th>Title</th>
                       <th>Slug</th>
-                      <th>Deskripsi Singkat</th>
+                      <th>Short Decsripsi</th>
                       <th>Status</th>
                       {{-- <th>Status</th> --}}
                       <th>Action</th>
@@ -138,7 +138,7 @@
       var table = $('.data-table').DataTable({
         processing: true,
         serverSide: true,
-        ajax: "{{ route('artikel.index') }}",
+        ajax: "{{ route('admin.blog.index') }}",
         zerorows: 'Tidak Ada Data',
         //loading
         language: {
@@ -147,7 +147,7 @@
         columns: [
           // {data: 'id', name: 'id'},
           {
-            data: 'nama_artikel',
+            data: 'name',
             name: 'nama_artikel'
           },
           {
@@ -155,7 +155,7 @@
             name: 'slug'
           },
           {
-            data: 'isi_singkat',
+            data: 'short_description',
             name: 'isi_singkat'
           },
           {

@@ -148,14 +148,15 @@
             name: 'name'
           },
           {
-            data: 'spesialist',
+            data: 'SpNama',
             name: 'slug'
           },
           {
             data: 'image',
             name: 'image',
             render: function(data, type, row) {
-                return '<img src="' + data + '" width="50" height="50">';
+                return `<img src="{{asset('/storage/doctor')}}/${data}" width="50" height="50">`;
+                // return '<img src="' + data + '" width="50" height="50">';
                 }
           },
           {

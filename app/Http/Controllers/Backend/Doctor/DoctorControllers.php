@@ -19,14 +19,15 @@ class DoctorControllers extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $kategori = Doctor::select('*');
+            $kategori = Doctor::select('doctors.*', 'specialist_doctors.name as SpNama')->join('specialist_doctors', 'doctors.specialist_doctor_id', '=', 'specialist_doctors.id');
+            // dd($kategori);
             return DataTables::of($kategori)
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
                     //form delete
                     $formdelete = '<form action="' . route('admin.doctor.destroy', $row->id) . '" method="POST">' . csrf_field() . method_field("DELETE") . '<button type="submit" class="btn btn-danger btn-sm" onclick="return confirm(\'Apakah anda yakin ingin menghapus data ini?\')"><i class="fa fa-trash"></i> Hapus</button></form>';
                     //form edit
-                    $formedit = '<a href="' . route('admin.doctor..edit', $row->id) . '" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Edit</a>';
+                    $formedit = '<a href="' . route('admin.doctor.edit', $row->id) . '" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Edit</a>';
                     $btn = $formedit . '
                         <br/>
                         ' . $formdelete . '';

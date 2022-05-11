@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Create Category Blog</h1>
+            <h1>Update Doctor</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -38,6 +38,16 @@
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
                     <input name="name" value="{{old('name',$doctor->name)}}" type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Nama Kategori">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Specialist</label>
+                    <select name="specialist" class="form-control select2" style="width: 100%;">
+                      <option selected="selected" value="">Choose</option>
+                      @foreach ($specialist as $item)
+                        {{-- <option value="{{ $item->id }}">{{ $item->name }}</option> --}}
+                        <option value="{{ $item->id }}" {{ $doctor->specialist_doctor_id == $item->id ? 'selected' : '' }}>{{ $item->name }}</option>
+                      @endforeach
+                    </select>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputFile">Image</label>
