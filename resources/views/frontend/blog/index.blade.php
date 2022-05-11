@@ -23,83 +23,28 @@
       <div class="row">
         <div class="col-md-9 col-sm-12 col-xs-12">
           <div class="left-side">
-            <div class="item-holder">
-              <div class="image-box">
-                <figure>
-                  <a href="single-blog.html"><img src="images/blog/5.jpg" alt=""></a>
-                </figure>
-              </div>
-              <div class="content-text">
-                <a href="single-blog.html">
-                  <h6>A LESSON IN SURGERY PREPAREDNESS - FROM HURRICANE SEASON</h6>
-                </a>
-                <span>By Donult Trum / 02 January 2018</span>
-                <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Sed porttitor lectus nibh.
-                  Curabitur aliquet quam
-                  id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
-                <div class="link-btn">
-                  <a href="single-blog.html" class="btn-style-one">read more</a>
+              @foreach ($blog as $item)
+                  
+              <div class="item-holder">
+                <div class="image-box">
+                  <figure>
+                    <a href="{{route('blog.show',$item->slug)}}">
+                        <img src="{{asset('/storage/blog/',$item->image)}}" alt="">
+                    </a>
+                  </figure>
+                </div>
+                <div class="content-text">
+                  <a href="{{route('blog.show',$item->slug)}}">
+                    <h6>{{$item->title}}</h6>
+                  </a>
+                  <span>By Admin / {{$item->created_at}}</span>
+                  <p>{{$item->short_description}}</p>
+                  <div class="link-btn">
+                    <a href="{{route('blog.show',$item->slug)}}" class="btn-style-one">read more</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item-holder">
-              <div class="image-box">
-                <figure>
-                  <a href="single-blog.html"><img src="images/blog/6.jpg" alt=""></a>
-                </figure>
-              </div>
-              <div class="content-text">
-                <a href="single-blog.html">
-                  <h6>PATIENT ENGAGEMENT AND THE IMPROVEMENT OF CARE AND RECOVERY</h6>
-                </a>
-                <span>By James Anderson / 08 January 2018</span>
-                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.
-                  Nulla porttitor accumsan
-                  tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-                <div class="link-btn">
-                  <a href="single-blog.html" class="btn-style-one">read more</a>
-                </div>
-              </div>
-            </div>
-            <div class="item-holder">
-              <div class="image-box">
-                <figure>
-                  <a href="single-blog.html"><img src="images/blog/7.jpg" alt=""></a>
-                </figure>
-              </div>
-              <div class="content-text">
-                <a href="single-blog.html">
-                  <h6>HOW TO MAKE YOUR MEDICAL TRAINING EVENT OVER THE TOP</h6>
-                </a>
-                <span>By Garry Moe / 12 January 2018</span>
-                <p>Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-                  Quisque velit nisi, pretium
-                  ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-                </p>
-                <div class="link-btn">
-                  <a href="single-blog.html" class="btn-style-one">read more</a>
-                </div>
-              </div>
-            </div>
-            <div class="item-holder">
-              <div class="image-box">
-                <figure>
-                  <a href="single-blog.html"><img src="images/blog/8.jpg" alt=""></a>
-                </figure>
-              </div>
-              <div class="content-text">
-                <a href="single-blog.html">
-                  <h6>WHAT DOES THE FLEXDEX BRING TO LAPAROSCOPY?</h6>
-                </a>
-                <span>By Luis Morris / 25 January 2018</span>
-                <p>Proin eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-                  Praesent sapien massa, convallis
-                  a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-                <div class="link-btn">
-                  <a href="single-blog.html" class="btn-style-one">read more</a>
-                </div>
-              </div>
-            </div>
+              @endforeach
           </div>
         </div>
         <div class="col-md-3 col-sm-12 col-xs-12">
