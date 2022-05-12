@@ -18,4 +18,9 @@ class Blog extends Model
         'category_blog_id',
         'status',
     ];
+
+    public function get_category_blog()
+    {
+        return $this->belongsTo(CategoryBlog::class);
+    }
 }

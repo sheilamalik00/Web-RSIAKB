@@ -13,4 +13,9 @@ class ScheduleDoctor extends Model
         'practice_day',
         'practice_time',
     ];
+
+    public function get_doctor()
+    {
+        return $this->belongsTo(Doctor::class);
+    }
 }
