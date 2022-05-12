@@ -11,7 +11,7 @@ class IndexControllers extends Controller
 {
     public function index()
     {
-        $blog = Blog::all();
+        $blog = Blog::paginate(5);
         return view('frontend.blog.index',compact('blog'));
     }
     public function show($id)

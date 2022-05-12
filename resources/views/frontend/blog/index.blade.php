@@ -2,7 +2,7 @@
 
 @section('content')
   <!--Page Title-->
-  <section class="page-title text-center" style="background-image:url(images/background/3.jpg);">
+  <section class="page-title text-center" style="background-image:url({{asset('asset/frontend/images/background/3.jpg')}});">
     <div class="container">
       <div class="title-text">
         <h1>Blog</h1>
@@ -73,21 +73,22 @@
               <div class="text-title">
                 <h6>Tags</h6>
               </div>
-              <a href="#">ray</a><a href="#">dental</a>
+              {{-- <a href="#">ray</a><a href="#">dental</a>
               <a href="#">Clean</a><a href="#">hospitality</a>
-              <a href="#">Dormamu</a><a href="#">Medical</a><a href="#">hospitality</a>
+              <a href="#">Dormamu</a><a href="#">Medical</a><a href="#">hospitality</a> --}}
             </div>
           </div>
         </div>
       </div>
       <div class="styled-pagination">
-        <ul>
+          {{$blog->links('frontend.tools.paginate')}}
+        {{-- <ul>
           <li><a class="prev" href="#"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
           <li><a href="#" class="active">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a class="next" href="#"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
-        </ul>
+        </ul> --}}
       </div>
     </div>
   </section>
