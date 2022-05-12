@@ -3,12 +3,14 @@
 namespace App\Http\Controllers\Frontend\About;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blog;
 use Illuminate\Http\Request;
 
 class IndexControllers extends Controller
 {
     public function index()
     {
-        return view('frontend.about.index');
+        $blog = Blog::latest()->limit(2)->get();
+        return view('frontend.about.index',compact('blog'));
     }
 }

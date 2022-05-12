@@ -32,121 +32,35 @@
           <!-- Nav tabs -->
           <div class="tabs">
             <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active">
-                <a href="#doctor" data-toggle="tab">doctor</a>
-              </li>
-              <li role="presentation">
-                <a href="#event-planning" data-toggle="tab">event planning</a>
-              </li>
-              <li role="presentation">
-                <a href="#lab" data-toggle="tab">lab</a>
-              </li>
-              <li role="presentation">
-                <a href="#marketing" data-toggle="tab">marketing</a>
-              </li>
+              @foreach ($specialist as $index => $item)
+                <li role="presentation" class="{{ $index == 0 ? 'active' : '' }}">
+                  <a href="#{{ $item->id }}" data-toggle="tab">{{ $item->name }}</a>
+                </li>
+              @endforeach
+
             </ul>
           </div>
           <div class="tab-content">
             <!--Start single tab content-->
-            <div class="team-members tab-pane fade in active row" id="doctor">
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/doctor-1.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. Emely Robert</h6>
-                  <p>Bone Specialist</p>
-                </div>
+            @foreach ($specialist as $index => $item)
+              <div class="team-members tab-pane fade in {{ $index == 0 ? 'active' : '' }} row" id="{{ $item->id }}">
+                @forelse ($doctor as $itemDoctor)
+                  @if ($item->id == $itemDoctor->specialist_doctor_id)
+                    <div class="col-md-4 col-sm-6">
+                      <div class="team-person text-center">
+                        <img src="{{ asset('/storage/doctor/', $itemDoctor->image) }}" class="img-responsive"
+                          alt="team">
+                        <h6>{{ $itemDoctor->name }}</h6>
+                        <p>{{ $item->name }}</p>
+                      </div>
+                    </div>
+                  @endif
+                @empty
+                @endforelse
               </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/doctor-2.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. Rag Jhon</h6>
-                  <p>Eye Specialist</p>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/doctor-3.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. Tent Richardson</h6>
-                  <p>Skin Specialist</p>
-                </div>
-              </div>
-            </div>
-            <!--End single tab content-->
-            <!--Start single tab content-->
-            <div class="team-members tab-pane fade in row" id="event-planning">
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/event-1.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. Sheiring Ton</h6>
-                  <p>Manager</p>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/event-2.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. Rig Richard</h6>
-                  <p>Sr. Manager</p>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/event-3.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. Tom Moddy</h6>
-                  <p>President</p>
-                </div>
-              </div>
-            </div>
-            <!--End single tab content-->
-            <!--Start single tab content-->
-            <div class="team-members tab-pane fade in row" id="lab">
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/doctor-lab-1.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. Maria Robert</h6>
-                  <p>X-ray</p>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/doctor-lab-2.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. John Kelly</h6>
-                  <p>ultrasound therapy</p>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/doctor-lab-3.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. Simran Toe</h6>
-                  <p>bone therapy</p>
-                </div>
-              </div>
-            </div>
-            <!--End single tab content-->
-            <!--Start single tab content-->
-            <div class="team-members tab-pane fade in row" id="marketing">
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/doctor-2.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. Rag Jhon</h6>
-                  <p>Eye Specialist</p>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/doctor-lab-2.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. John Kelly</h6>
-                  <p>ultrasound therapy</p>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="team-person text-center">
-                  <img src="images/team/event-1.jpg" class="img-responsive" alt="team">
-                  <h6>Dr. Sheiring Ton</h6>
-                  <p>Manager</p>
-                </div>
-              </div>
-            </div>
-            <!--End single tab content-->
+            @endforeach
+            <!--End single tab content--
+                <!--End single tab content-->
           </div>
         </div>
       </div>

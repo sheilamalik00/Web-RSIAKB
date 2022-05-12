@@ -6,7 +6,7 @@
   ==================================-->
   <div class="hero-slider">
     <!-- Slider Item -->
-    <div class="slider-item slide1" style="background-image:url(images/fotoslider.png)">
+    <div class="slider-item slide1" style="background-image:url({{asset('asset/frontend/images/fotoslider.png')}})">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -21,7 +21,7 @@
       </div>
     </div>
     <!-- Slider Item -->
-    <div class="slider-item" style="background-image:url(images/slider/slider-bg-2.jpg);">
+    <div class="slider-item" style="background-image:url({{asset('asset/frontend/images/slider/slider-bg-2.jpg')}});">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -37,7 +37,7 @@
       </div>
     </div>
     <!-- Slider Item -->
-    <div class="slider-item" style="background-image:url(images/slider/slider-bg-3.jpg)">
+    <div class="slider-item" style="background-image:url({{asset('asset/frontend/images/slider/slider-bg-3.jpg')}})">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -504,36 +504,23 @@
         </p>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="team-member">
-            <img src="images/team/doctor-2.jpg" alt="doctor" class="img-responsive">
-            <div class="contents text-center">
-              <h4>Dr. Robert Barrethion</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-              <a href="#" class="btn btn-main">read more</a>
+          @foreach ($doctor as $item)
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="team-member">
+                @if($item->image==null)
+                {{-- images/doctor.svg --}}
+                <img src="{{asset('asset/frontend/images/doctor.svg')}}" alt="doctor" class="img-responsive">
+                @else
+                <img src="{{Storage::url('public/doctor/').$item->image}}" alt="doctor" class="img-responsive">
+              @endif
+              <div class="contents text-center">
+                <h4>{{$item->name}}</h4>
+                <p></p>
+                {{-- <a href="#" class="btn btn-main">read more</a> --}}
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="team-member">
-            <img src="images/team/doctor-lab-3.jpg" alt="doctor" class="img-responsive">
-            <div class="contents text-center">
-              <h4>Dr. Marry Lou</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-              <a href="#" class="btn btn-main">read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="team-member">
-            <img src="images/team/event-2.jpg" alt="doctor" class="img-responsive">
-            <div class="contents text-center">
-              <h4>Dr. Sansa Stark</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-              <a href="#" class="btn btn-main">read more</a>
-            </div>
-          </div>
-        </div>
+          @endforeach
       </div>
     </div>
   </section>

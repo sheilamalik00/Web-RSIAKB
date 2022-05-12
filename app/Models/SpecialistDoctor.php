@@ -9,4 +9,9 @@ class SpecialistDoctor extends Model
 {
     use HasFactory;
     protected $fillable = ['name','slug'];
+
+    public function get_doctor()
+    {
+        return $this->hasMany(Doctor::class);
+    }
 }

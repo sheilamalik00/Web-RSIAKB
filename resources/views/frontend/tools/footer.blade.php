@@ -59,34 +59,26 @@
           <div class="social-links">
             <h6>Recent Posts</h6>
             <ul>
-              <li class="item">
-                <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
+                @foreach ($blog as $item)
+                    
+                <li class="item">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="{{route('blog.show',$item->slug)}}">
+                        @if($item->image==null)
+                        <img class="media-object" src="{{asset('asset/frontend/images/blog/no-image.jpg')}}" width="40px" height="40px" alt="post-thumb">
+                        @else
+                        <img class="media-object" src="{{Storage::url('public/blog/').$item->image}}" alt="post-thumb">
+                        @endif
                     </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="{{route('blog.show',$item->slug)}}">{{$item->title}}</a></h4>
+                      <p>{{$item->short_description}}</p>
+                    </div>
                   </div>
-                  <div class="media-body">
-                    <h4 class="media-heading"><a href="#">Post Title</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="item">
-                <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="media-heading">
-                      <a href="#">Post Title</a>
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
-                  </div>
-                </div>
-              </li>
+                </li>
+                @endforeach
             </ul>
           </div>
         </div>
@@ -102,13 +94,13 @@
       </div>
       <ul class="footer-bottom-link">
         <li>
-          <a href="index.html">Beranda</a>
+          <a href="{{route('home.index')}}">Beranda</a>
         </li>
         <li>
-          <a href="about.html">Tentang Kami</a>
+          <a href="{{route('about.index')}}">Tentang Kami</a>
         </li>
         <li>
-          <a href="contact.html">Kontak Kami</a>
+          <a href="{{route('contact.index')}}">Kontak Kami</a>
         </li>
       </ul>
     </div>
