@@ -110,7 +110,7 @@
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="images/resource/1.png" alt="">
+                        <img src="{{asset('asset/frontend/images/resource/1.png')}}" alt="">
                       </a>
                     </figure>
                   </div>
@@ -125,7 +125,7 @@
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="images/resource/2.png" alt="">
+                        <img src="{{asset('asset/frontend/images/resource/2.png')}}" alt="">
                       </a>
                     </figure>
                   </div>
@@ -140,7 +140,7 @@
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="images/resource/3.png" alt="">
+                        <img src="{{asset('asset/frontend/images/resource/3.png')}}" alt="">
                       </a>
                     </figure>
                   </div>
@@ -155,7 +155,7 @@
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="images/resource/4.png" alt="">
+                        <img src="{{asset('asset/frontend/images/resource/4.png')}}" alt="">
                       </a>
                     </figure>
                   </div>
@@ -760,10 +760,10 @@
               <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <input type="text" name="Name" placeholder="Nama" required="">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" name="Email" placeholder="E-Mail" required="">
+                    <select name="subject">
+                      <option>Dokter</option>
+                      
+                    </select>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12">
@@ -779,20 +779,7 @@
                   <div class="form-group">
                     <select name="subject">
                       <option>Dokter</option>
-                      <option>dr. Dwi Indah Wulandari</option>
-                      <option>dr. Anne Intan Nurbaity</option>
-                      <option>dr. Benhard Aron</option>
-                      <option>dr. Oktavia Utami</option>
-                      <option>dr. Subandi Hasan, Sp.A.</option>
-                      <option>dr. Milza Delfina, M.Sc., Sp.A.</option>
-                      <option>dr. Athiyatul Aufie, Sp.A.</option>
-                      <option>dr. Bayu Dwi Febrianto, Sp.OG</option>
-                      <option>dr. Kukuh Wibowo Kustarto, SpOG (K)</option>
-                      <option>dr. Kiki Maharani, Sp.PD</option>
-                      <option>dr. Monika Rachmafuri, Sp.An</option>
-                      <option>dr. Iyano Santoso, Sp.B</option>
-                      <option>dr. Sonya Anasrul, Sp.Rad</option>
-                      <option>dr. Diana Astari, Sp.PK</option>
+                      
                     </select>
                   </div>
                   <div class="form-group">
@@ -810,4 +797,9 @@
     </div>
   </section>
   <!-- End Contact Section -->
+@endsection
+
+
+@section('scriptJs')
+
 @endsection

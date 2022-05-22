@@ -13,7 +13,7 @@ class IndexControllers extends Controller
     public function index()
     {
         $blog = Blog::latest()->limit(2)->get();
-        $doctor = Doctor::latest()->limit(4)->get();
+        $doctor = Doctor::latest()->limit(3)->get();
         $doctors = Doctor::all();
         $specialist = SpecialistDoctor::all();
         return view('frontend.home.index',compact('blog','doctor','doctors','specialist'));
