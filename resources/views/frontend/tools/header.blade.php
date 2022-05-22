@@ -4,7 +4,7 @@
         <div class="logo">
           <figure>
             <a href="index.html">
-                  <img src="images/RSIAKB.png" alt="" width="230">
+                  <img src="{{asset('asset/frontend/images/RSIAKB.png')}}" alt="" width="230">
             </a>
           </figure>
         </div>
