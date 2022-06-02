@@ -2,11 +2,11 @@
 
 @section('content')
   <!--=================================
-  =            Page Slider            =
-  ==================================-->
+    =            Page Slider            =
+    ==================================-->
   <div class="hero-slider">
     <!-- Slider Item -->
-    <div class="slider-item slide1" style="background-image:url({{asset('asset/frontend/images/fotoslider.png')}})">
+    <div class="slider-item slide1" style="background-image:url({{ asset('asset/frontend/images/fotoslider.png') }})">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -21,7 +21,7 @@
       </div>
     </div>
     <!-- Slider Item -->
-    <div class="slider-item" style="background-image:url({{asset('asset/frontend/images/slider/slider-bg-2.jpg')}});">
+    <div class="slider-item" style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-2.jpg') }});">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -37,7 +37,7 @@
       </div>
     </div>
     <!-- Slider Item -->
-    <div class="slider-item" style="background-image:url({{asset('asset/frontend/images/slider/slider-bg-3.jpg')}})">
+    <div class="slider-item" style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-3.jpg') }})">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -110,7 +110,7 @@
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{asset('asset/frontend/images/resource/1.png')}}" alt="">
+                        <img src="{{ asset('asset/frontend/images/resource/1.png') }}" alt="">
                       </a>
                     </figure>
                   </div>
@@ -125,7 +125,7 @@
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{asset('asset/frontend/images/resource/2.png')}}" alt="">
+                        <img src="{{ asset('asset/frontend/images/resource/2.png') }}" alt="">
                       </a>
                     </figure>
                   </div>
@@ -140,7 +140,7 @@
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{asset('asset/frontend/images/resource/3.png')}}" alt="">
+                        <img src="{{ asset('asset/frontend/images/resource/3.png') }}" alt="">
                       </a>
                     </figure>
                   </div>
@@ -155,7 +155,7 @@
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{asset('asset/frontend/images/resource/4.png')}}" alt="">
+                        <img src="{{ asset('asset/frontend/images/resource/4.png') }}" alt="">
                       </a>
                     </figure>
                   </div>
@@ -504,23 +504,23 @@
         </p>
       </div>
       <div class="row">
-          @foreach ($doctor as $item)
+        @foreach ($doctor as $item)
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="team-member">
-                @if($item->image==null)
+              @if ($item->image == null)
                 {{-- images/doctor.svg --}}
-                <img src="{{asset('asset/frontend/images/doctor.svg')}}" alt="doctor" class="img-responsive">
-                @else
-                <img src="{{Storage::url('public/doctor/').$item->image}}" alt="doctor" class="img-responsive">
+                <img src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor" class="img-responsive">
+              @else
+                <img src="{{ Storage::url('public/doctor/') . $item->image }}" alt="doctor" class="img-responsive">
               @endif
               <div class="contents text-center">
-                <h4>{{$item->name}}</h4>
+                <h4>{{ $item->name }}</h4>
                 <p></p>
                 {{-- <a href="#" class="btn btn-main">read more</a> --}}
               </div>
             </div>
           </div>
-          @endforeach
+        @endforeach
       </div>
     </div>
   </section>
@@ -756,34 +756,45 @@
                 <span>Janji Temu</span>
               </h3>
             </div>
-            <form name="contact_form" class="default-form contact-form" action="sendmail.php" method="post">
+            <form name="contact_form" class="default-form contact-form" action="" method="get">
               <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <select name="subject">
-                      <option>Dokter</option>
-                      
+                    <input type="text" name="name" placeholder="Name" required="">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="noktp" placeholder="Nomor KTP" required="">
+                  </div>
+
+                  <div class="form-group">
+                    <select name="subject" id="spesialis">
+                      <option>Pilih Spesialis</option>
+
+                      @foreach ($specialist as $index)
+                        <option value="{{$index->id}}">{{ $index->name }}</option>
+                      @endforeach
                     </select>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <input type="text" name="Phone" placeholder="Telepon" required="">
+                    <input type="text" name="Phone" placeholder="Email" required="">
                   </div>
                   <div class="form-group">
-                    <input type="text" name="Date" placeholder="Tanggal" required="" id="datepicker">
+                    <input type="date" id="tgl_berobat" class="tgl_berobat" name="tgl_berobat" placeholder="Tanggal Berobat" required="">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="Date" placeholder="Tanggal Lahir" required="" id="datepicker">
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <select name="subject">
+                    <select name="doctor" id="doctor">
                       <option>Dokter</option>
-                      
+
                     </select>
-                  </div>
-                  <div class="form-group">
-                    <textarea name="form_message" placeholder="Pesan" required=""></textarea>
                   </div>
                   <div class="form-group text-center">
                     <button type="submit" class="btn-style-one">Kirim</button>
@@ -801,5 +812,50 @@
 
 
 @section('scriptJs')
-
+<script>
+    //get api doctor from select specialist
+    $('#spesialis').change(function(){
+        var specialist = $(this).val();
+        var tgl_berobat = $('.tgl_berobat').val();
+        if(specialist != null && tgl_berobat != null){
+            $.ajax({
+                url: "{{ url('/api/doctor') }}",
+                type: "GET",
+                data: {
+                    specialist: specialist,
+                    tgl_berobat: tgl_berobat
+                },
+                success: function(data){
+                    $('#doctor').empty();
+                    $('#doctor').append('<option>Dokter</option>');
+                    $.each(data, function(key, value){
+                        $('#doctor').append('<option value="'+value.id+'">'+value.name+'</option>');
+                    });
+                }
+            });
+        }
+    });
+    $('#tgl_berobat').change(function(){
+        var specialist = $(this).val();
+        var tgl_berobat = $('#tgl_berobat').val();
+        console.log(tgl_berobat);
+        if(specialist != null && tgl_berobat != null){
+            $.ajax({
+                url: "{{ url('/api/doctor') }}",
+                type: "GET",
+                data: {
+                    specialist: specialist,
+                    tgl_berobat: tgl_berobat
+                },
+                success: function(data){
+                    $('#doctor').empty();
+                    $('#doctor').append('<option>Dokter</option>');
+                    $.each(data, function(key, value){
+                        $('#doctor').append('<option value="'+value.id+'">'+value.name+'</option>');
+                    });
+                }
+            });
+        }
+    });
+</script>
 @endsection

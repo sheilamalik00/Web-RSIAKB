@@ -18,7 +18,7 @@ class ScheduleDoctorControllers extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $kategori = ScheduleDoctor::select('*');
+            $kategori = ScheduleDoctor::all();
             return DataTables::of($kategori)
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
@@ -62,8 +62,10 @@ class ScheduleDoctorControllers extends Controller
             'schedule_day' => 'required',
             'schedule_time' => 'required',
         ]);
+        $doctor = Doctor::find($request->doctor_id);
         $schedule = ScheduleDoctor::create([
             'doctor_id' => $request->doctor_id,
+            'doctor_name' => $doctor->name,
                 'practice_day' => $request->schedule_day,
                 'practice_time' => $request->schedule_time,
         ]);
