@@ -820,7 +820,7 @@
     //get api doctor from select specialist
     $('#spesialis').change(function(){
         var specialist = $(this).val();
-        var tgl_berobat = $('.tgl_berobat').val();
+        var tgl_berobat = $('#tgl_berobat').val();
         if(specialist != null && tgl_berobat != null){
             $.ajax({
                 url: "{{ url('/api/doctor') }}",
@@ -840,7 +840,7 @@
         }
     });
     $('#tgl_berobat').change(function(){
-        var specialist = $(this).val();
+        var specialist = $('#spesialis').val();
         var tgl_berobat = $('#tgl_berobat').val();
         console.log(tgl_berobat);
         if(specialist != null && tgl_berobat != null){
