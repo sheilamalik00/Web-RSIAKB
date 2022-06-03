@@ -27,7 +27,7 @@
             <!-- /.card -->
             <div class="card">
                 <div class="card-header">
-                <a href="{{route('admin.doctor.create')}}" class="btn btn-sm btn-success">Tambah Data</a>
+                <a href="{{route('admin.schedule.create')}}" class="btn btn-sm btn-success">Tambah Data</a>
                 </div>
             </div>
             <div class="card">
@@ -46,9 +46,9 @@
                   <thead>
                     <tr>
                       {{-- <th>No</th> --}}
-                      <th>Nama</th>
-                      <th>Spesialist</th>
-                      <th>Icon</th>
+                      <th>Name Doctor</th>
+                      <th>Days</th>
+                      <th>Time</th>
                       {{-- <th>Status</th> --}}
                       <th>Action</th>
                     </tr>
@@ -102,7 +102,7 @@
         columns: [
           // {data: 'id', name: 'id'},
           {
-            data: 'doctor_name',
+            data: 'get_doctor.name',
             name: 'doctor_name',
           },
           {

@@ -16,7 +16,7 @@ class Doctor extends Model
 
     public function get_specialist_doctor()
     {
-        return $this->belongsTo(SpecialistDoctor::class);
+        return $this->belongsTo(SpecialistDoctor::class,'specialist_doctor_id','id');
     }
 
     public function get_schedule_doctor()

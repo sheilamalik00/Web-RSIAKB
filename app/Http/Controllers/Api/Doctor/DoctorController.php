@@ -12,13 +12,10 @@ class DoctorController extends Controller
     public function get_doctor(Request $request)
     {
         //convert date to day
-        $day = $request->day;
+        $day = $request->tgl_berobat;
         $day = Carbon::parse($day)->format('l');
-
-        $doctor = Doctor::where('specialist_doctor_id',$request->specialist)->whereRelation('schedule_doctors',function($query) use ($day){
-            $query->where('practice_day',$day);
-        })->get();
-        dd($doctor);
+        // dd($day);
+        $doctor = Doctor::where('specialist_doctor_id',$request->specialist)->whereRelation('get_schedule_doctor','practice_day',$day)->get();
         return response()->json($doctor);
     }
 }

@@ -17,7 +17,7 @@ class ScheduleDoctor extends Model
 
     public function get_doctor()
     {
-        return $this->belongsTo(Doctor::class);
+        return $this->belongsTo(Doctor::class,'doctor_id','id');
     }
 
     public function convert_date_to_day()

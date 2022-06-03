@@ -756,7 +756,7 @@
                 <span>Janji Temu</span>
               </h3>
             </div>
-            <form name="contact_form" class="default-form contact-form" action="" method="get">
+            <form name="contact_form" class="default-form contact-form" action="{{route('kirim-jadwal')}}" method="get">
               <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                   <div class="form-group">
@@ -767,7 +767,7 @@
                   </div>
 
                   <div class="form-group">
-                    <select name="subject" id="spesialis">
+                    <select name="poli" id="spesialis">
                       <option>Pilih Spesialis</option>
 
                       @foreach ($specialist as $index)
@@ -778,14 +778,18 @@
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <input type="text" name="Phone" placeholder="Email" required="">
+                    <input type="text" name="nophone" placeholder="No Telepon" required="">
                   </div>
                   <div class="form-group">
-                    <input type="date" id="tgl_berobat" class="tgl_berobat" name="tgl_berobat" placeholder="Tanggal Berobat" required="">
+                    <input type="email" name="email" placeholder="email">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="text" name="tgl_lahir" placeholder="Tanggal Lahir" required="" id="datepicker">
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                   </div>
                   <div class="form-group">
-                    <input type="text" name="Date" placeholder="Tanggal Lahir" required="" id="datepicker">
+                    <input type="date" id="tgl_berobat" class="tgl_berobat" name="tgl_berobat" placeholder="Tanggal Berobat" required="">
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                   </div>
                 </div>

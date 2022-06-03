@@ -31,18 +31,22 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="{{ route('admin.category.store') }}" method="POST" enctype="multipart/form-data">
+              <form action="{{ route('admin.schedule.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
-                    <input name="name" type="text" class="form-control" id="exampleInputEmail1"
-                      placeholder="Masukan Nama Kategori">
+                    <select name="doctor_id" class="form-control" id="exampleInputEmail1">
+                      <option value="">Pilih Doctor</option>
+                        @foreach ($doctor as $item)
+                            <option value="{{ $item->id }}">{{ $item->name }} ({{$item->get_specialist_doctor->name}})</option>
+                        @endforeach
+                    </select>
                   </div>
                   {{-- form week --}}
                   <div class="form-group">
                     <label for="exampleInputEmail1">Week</label>
-                    <select name="week" class="form-control" id="exampleInputEmail1">
+                    <select name="schedule_day" class="form-control" id="exampleInputEmail1">
                       <option value="">Choose Day</option>
                       {{-- English Day --}}
                         <option value="Monday">Monday</option>
