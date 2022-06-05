@@ -17,8 +17,10 @@ class ScheduleDoctorControllers extends Controller
      */
     public function index(Request $request)
     {
+        $kategori = ScheduleDoctor::with('get_doctor')->get();
+        // dd($kategori);
         if ($request->ajax()) {
-            $kategori = ScheduleDoctor::select('*');
+            $kategori = ScheduleDoctor::with('get_doctor')->get();
             return DataTables::of($kategori)
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
@@ -45,7 +47,7 @@ class ScheduleDoctorControllers extends Controller
      */
     public function create()
     {
-        $doctor = Doctor::all();
+        $doctor = Doctor::with('get_specialist_doctor')->get();
         return view('backend.schedule.create', compact('doctor'));
     }
 
@@ -60,12 +62,13 @@ class ScheduleDoctorControllers extends Controller
         $this->validate($request, [
             'doctor_id' => 'required',
             'schedule_day' => 'required',
-            'schedule_time' => 'required',
         ]);
+        $doctor = Doctor::find($request->doctor_id);
         $schedule = ScheduleDoctor::create([
             'doctor_id' => $request->doctor_id,
+            'doctor_name' => $doctor->name,
                 'practice_day' => $request->schedule_day,
-                'practice_time' => $request->schedule_time,
+                'practice_time' => $request->time_first.'-'.$request->time_last,
         ]);
         if($schedule){
             return redirect()->route('admin.schedule.index')->with('success', 'Data berhasil ditambahkan');

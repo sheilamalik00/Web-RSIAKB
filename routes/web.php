@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,3 +46,6 @@ Route::get('/about', [App\Http\Controllers\Frontend\About\IndexControllers::clas
 Route::get('/contact', [App\Http\Controllers\Frontend\Contact\IndexControllers::class, 'index'])->name('contact.index');
 // gallery
 Route::get('/gallery', [App\Http\Controllers\Frontend\Gallery\IndexControllers::class, 'index'])->name('gallery.index');
+
+//kirim Jadwal
+Route::get('/kirim-jadwal',[App\Http\Controllers\Frontend\Doctor\IndexControllers::class, 'kirimJadwal'])->name('kirim-jadwal');

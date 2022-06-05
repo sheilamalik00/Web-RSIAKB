@@ -18,4 +18,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/doctor/{id}', [App\Http\Controllers\Api\Doctor\DoctorController::class,'get_doctor'])->name('doctor.get_doctor');
+Route::get('/doctor', [App\Http\Controllers\Api\Doctor\DoctorController::class,'get_doctor'])->name('doctor.get_doctor');

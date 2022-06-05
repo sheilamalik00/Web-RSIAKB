@@ -90,7 +90,7 @@
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Schedule
-                <i class="fas fa-angle-left right"></i>
+                {{-- <i class="fas fa-angle-left right"></i> --}}
               </p>
             </a>
           </li>
