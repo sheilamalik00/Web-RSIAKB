@@ -27,7 +27,7 @@
             <!-- /.card -->
             <div class="card">
                 <div class="card-header">
-                <a href="{{route('admin.doctor.create')}}" class="btn btn-sm btn-success">Tambah Data</a>
+                <a href="{{route('admin.gallery.create')}}" class="btn btn-sm btn-success">Tambah Data</a>
                 </div>
             </div>
             <div class="card">
@@ -46,9 +46,8 @@
                   <thead>
                     <tr>
                       {{-- <th>No</th> --}}
-                      <th>Nama</th>
-                      <th>Spesialist</th>
-                      <th>Icon</th>
+                      <th>Name</th>
+                      <th>Type</th>
                       {{-- <th>Status</th> --}}
                       <th>Action</th>
                     </tr>
@@ -140,7 +139,7 @@
         language: {
           processing: '<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span> '
         },
-        ajax: "{{ route('admin.doctor.index') }}",
+        ajax: "{{ route('admin.gallery.index') }}",
         columns: [
           // {data: 'id', name: 'id'},
           {
@@ -148,16 +147,8 @@
             name: 'name'
           },
           {
-            data: 'SpNama',
-            name: 'slug'
-          },
-          {
-            data: 'image',
-            name: 'image',
-            render: function(data, type, row) {
-                return `<img src="{{asset('/storage/doctor')}}/${data}" width="50" height="50">`;
-                // return '<img src="' + data + '" width="50" height="50">';
-                }
+            data: 'type',
+            name: 'type'
           },
           {
             data: 'action',

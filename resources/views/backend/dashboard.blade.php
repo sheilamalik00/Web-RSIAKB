@@ -1,4 +1,4 @@
-@extends('admin.master')
+@extends('backend.master')
 @section('content')
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -12,7 +12,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -29,14 +29,14 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>{{$artikel}}</h3>
+                {{-- <h3>{{$artikel ?? ''}}</h3> --}}
 
                 <p>Artikel</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="{{route('artikel.index')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              {{-- <a href="{{route('artikel.index')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> --}}
             </div>
           </div>
           <!-- ./col -->
@@ -44,14 +44,14 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>{{$acara}}</h3>
+                {{-- <h3>{{$acara}}</h3> --}}
 
                 <p>Acara</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              {{-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> --}}
             </div>
           </div>
           <!-- ./col -->
@@ -59,14 +59,14 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>{{$viewer}}</h3>
+                {{-- <h3>{{$viewer}}</h3> --}}
 
                 <p>Pengunjung</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              {{-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> --}}
             </div>
           </div>
           <!-- ./col -->
@@ -74,14 +74,14 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>{{$proker}}</h3>
+                {{-- <h3>{{$proker}}</h3> --}}
 
                 <p>Proker</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              {{-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> --}}
             </div>
           </div>
           <!-- ./col -->
