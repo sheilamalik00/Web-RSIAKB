@@ -16,4 +16,9 @@ class Galeri extends Model
         'type',
         'description',
     ];
+
+    public function getFile()
+    {
+        return $this->image ? asset('storage/gallery/' . $this->image) : $this->url;
+    }
 }

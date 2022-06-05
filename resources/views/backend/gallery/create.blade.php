@@ -43,7 +43,7 @@
                     <select name="type" class="form-control select2" style="width: 100%;">
                       <option selected="selected" value="">Choose</option>
                       <option value="1">Video</option>
-                      <option value="2">Gallery</option>
+                      <option value="2">Image</option>
                     </select>
                   </div>
                   <div class="form-group">
