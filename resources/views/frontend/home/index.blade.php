@@ -2,8 +2,8 @@
 
 @section('content')
   <!--=================================
-    =            Page Slider            =
-    ==================================-->
+        =            Page Slider            =
+        ==================================-->
   <div class="hero-slider">
     <!-- Slider Item -->
     <div class="slider-item slide1" style="background-image:url({{ asset('asset/frontend/images/fotoslider.png') }})">
@@ -21,7 +21,8 @@
       </div>
     </div>
     <!-- Slider Item -->
-    <div class="slider-item" style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-2.jpg') }});">
+    <div class="slider-item"
+      style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-2.jpg') }});">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -37,7 +38,8 @@
       </div>
     </div>
     <!-- Slider Item -->
-    <div class="slider-item" style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-3.jpg') }})">
+    <div class="slider-item"
+      style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-3.jpg') }})">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -67,14 +69,14 @@
               <i class="fa fa-phone"></i>
               <h2>Telepon</h2>
               <a href="#">021-5520356</a>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Layanan Informasi dan pendaftaran 24 jam</p>
             </div>
             <div class="top-doctor item">
               <i class="fa fa-stethoscope"></i>
               <h2>Pelayanan 24 Jam</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dignissimos officia dicta
-                suscipit vel eum</p>
-              <a href="#" class="btn btn-main">Read more</a>
+              <p>Layanan IGD 24 Jam adalah pelayanan awal untuk pasien gawat darurat yang
+                membutuhkan tindakan segera</p>
+              {{-- <a href="#" class="btn btn-main">Read more</a> --}}
             </div>
             <div class="working-time item">
               <i class="fa fa-hourglass-o"></i>
@@ -98,11 +100,11 @@
         <div class="col-sm-12 col-xs-12">
           <div class="image-content">
             <div class="section-title text-center">
-              <h3>Pelayanan Terbaik
-                <span>di Rumah Sakit Kami</span>
+              <h3>Pelayanan
+                <span>yang tersedia di Rumah Sakit Kami</span>
               </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni in at debitis <br>
-                nam error officia vero tempora alias? Sunt?</p>
+              <p>Pelayanan medik dasar dan spesialistik serta pelayanan penunjang yang
+                tersedia di RSIA Karunia Bunda.</p>
             </div>
             <div class="row">
               <div class="col-sm-6">
@@ -114,10 +116,9 @@
                       </a>
                     </figure>
                   </div>
-                  <h6>Orthopedics</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam
-                    pariatur ex sunt, est aspernatur
-                    at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+                  <h6>Poli Kebidanan dan Kandungan</h6>
+                  <p>adalah Poliklinik yang bertujuan untuk membantu pasien dengan kasus yang berhubungan
+dengan kehamilan dan penyakit kandungan.</p>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -129,10 +130,10 @@
                       </a>
                     </figure>
                   </div>
-                  <h6>Diaginostic</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam
-                    pariatur ex sunt, est aspernatur
-                    at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+                  <h6>Poli Spesialis Anak</h6>
+                  <p>adalah layanan pemeriksaan dan pengobatan terhadap bayi dan anak sakit oleh Dokter
+Spesialis Anak yang meliputi : Pemeriksaan Kesehatan Anak, Pemeriksaan Tumbuh Kembang,
+dan Imunisasi.</p>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -144,10 +145,10 @@
                       </a>
                     </figure>
                   </div>
-                  <h6>Psycology</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam
-                    pariatur ex sunt, est aspernatur
-                    at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+                  <h6>Poli Penyakit Dalam</h6>
+                  <p>Adalah unit layanan yang menangani konsultasi dan penanganan masalah kesehatan organ dalam
+tanpa bedah seperti diabetes, hipertensi, ginjal, saluran cerna, infeksi, alergi, imunologi, geriatri, dan
+sebagainya</p>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -159,10 +160,12 @@
                       </a>
                     </figure>
                   </div>
-                  <h6>General Treatment</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam
-                    pariatur ex sunt, est aspernatur
-                    at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+                  <h6>Poli Bedah</h6>
+                  <p>Adalah unit pelayanan yang diberikan kepada pasien yang membutuhkan pelayanan kesehatan
+melalui proses pembedahan umum, seperti pasien pasca kecelakaan, Operasi Kecil, Perawatan luka
+
+biasa/luka oleh karena DM, Perawatan luka post Operasi Hernia, Usus Buntu, Haemoroid (Wasir),
+dan lain – lain serta Konsultasi Seputar Proses Pembedahan.</p>
                 </div>
               </div>
             </div>
@@ -183,19 +186,19 @@
             <div class="tabs">
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active">
-                  <a href="#dormitory" data-toggle="tab">dormitory</a>
+                  <a href="#dormitory" data-toggle="tab">Farmasi</a>
                 </li>
                 <li role="presentation">
-                  <a href="#orthopedic" data-toggle="tab">orthopedic</a>
+                  <a href="#orthopedic" data-toggle="tab">Laboratorium</a>
                 </li>
                 <li role="presentation">
-                  <a href="#sonogram" data-toggle="tab">sonogram</a>
+                  <a href="#sonogram" data-toggle="tab">Rontgen</a>
                 </li>
                 <li role="presentation">
-                  <a href="#x-ray" data-toggle="tab">x-ray</a>
+                  <a href="#x-ray" data-toggle="tab">Ruang Operasi</a>
                 </li>
                 <li role="presentation">
-                  <a href="#diagnostic" data-toggle="tab">diagnostic</a>
+                  <a href="#diagnostic" data-toggle="tab">Ruang Persalinan</a>
                 </li>
               </ul>
             </div>
@@ -218,7 +221,7 @@
                         prosthetic is added. then a dental
                         prosthetic is added.then a dental pros- thetic is added.</p>
                     </div>
-                    <ul class="content-list">
+                    {{-- <ul class="content-list">
                       <li>
                         <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental
                       </li>
@@ -228,7 +231,7 @@
                       <li>
                         <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
                       </li>
-                    </ul>
+                    </ul> --}}
                     <a href="#" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -383,27 +386,30 @@
     <div class="container">
       <div class="section-title text-center">
         <h3>Layanan
-          <span>yang Tersedia</span>
+          <span>Penunjang</span>
         </h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. qui suscipit atque
+        {{-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. qui suscipit atque
           <br>
           fugiat officia corporis rerum eaque neque totam animi, sapiente culpa. Architecto!
-        </p>
+        </p> --}}
       </div>
       <div class="row items-container clearfix">
         <div class="item">
           <div class="inner-box">
             <div class="img_holder">
               <a href="service.html">
-                <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
+                <img src="{{ asset('asset/frontend/images/gallery/1.jpg') }}" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
-              <a href="service.html">
-                <h6>Dormitory</h6>
+              <span>Unit Gawat Darurat</span>
+              <a href="#">
+                <h6>UGD</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>adalah unit pelayanan yang memberikan pelayanan pertama pada pasien dengan ancaman kematian
+dan atau resiko kecacatan secara terpadu yang memilki potensi untuk mengalami kondisi
+kegawat darutatan, baik karena penyakit, kecelakaan, keracunan, diserang binatang buas,
+atau penyebab lainnya.</p>
             </div>
           </div>
         </div>
@@ -417,9 +423,12 @@
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Germs Protection</h6>
+                <h6>ICU</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>adalah ruang khusus untuk pasien krisis yang memerlukan perawatan intensif dan observasi
+berkelanjutan, dilengkapi dengan berbagai peralatan modern untuk mendukung monitoring pasien
+seperti pasien monitor, ventilator, DC Shock (defibrillator), incubator, infant warmer, dan C-Pap.
+Instalasi Rawat Intensif RSIA KArunia Bunda terdiri dari ICU, HCU, & PERINA.</p>
             </div>
           </div>
         </div>
@@ -435,7 +444,8 @@
               <a href="service.html">
                 <h6>Psycology</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>pelayanan pemeriksaan spesimen klinik di bidang hematologi, kimia klinik, mikrobiologi klinik,
+parasitologi klinik, dan imunologi klinik.</p>
             </div>
           </div>
         </div>
@@ -449,9 +459,11 @@
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Dormitory</h6>
+                <h6>Radiologi</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>Radiologi adalah bagian dari ilmu kedokteran yang mempelajari tentang teknologi pencitraan, baik
+gelombang elektromagnetik maupun gelombang mekanik guna memindai bagian dalam tubuh
+manusia untuk mendeteksi suatu penyakit.</p>
             </div>
           </div>
         </div>
@@ -465,9 +477,11 @@
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Germs Protection</h6>
+                <h6>Farmasi</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>Pelayanan obat atas resep dokter
+Pelayanan Informasi Obat (PIO)
+Pelayanan Farmasi Klinik</p>
             </div>
           </div>
         </div>
@@ -481,9 +495,11 @@
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Psycology</h6>
+                <h6>Instalasi Gizi</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>Merupakan salah satu Instalasi Pelayanan Penunjang Medis yang memberikan pelayanan gizi
+di rumah sakit untuk memenuhi kebutuhan gizi baik pasien Rawat Inap maupun Rawat Jalan
+serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehatan.</p>
             </div>
           </div>
         </div>
@@ -527,7 +543,7 @@
   <!--End team section-->
 
   <!--testimonial-section-->
-  <section class="testimonial-section" style="background: url(images/testimonials/1.jpg);">
+  {{-- <section class="testimonial-section" style="background: url(images/testimonials/1.jpg);">
     <div class="container">
       <div class="section-title text-center">
         <h3>Testimoni
@@ -656,7 +672,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!--End testimonial-section-->
 
   <!-- Contact Section -->
@@ -675,23 +691,14 @@
                     <h4 class="panel-title">
                       <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
                         aria-expanded="true" aria-controls="collapseOne">
-                        Why Should I choose Medical Health
+                        Apakah RSIA Karunia Bunda menerima pasien umum, BPJS dan asuransi?
                       </a>
                     </h4>
                   </div>
                   <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                      3 wolf moon officia aute,
-                      non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                      moon tempor,
-                      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
-                      anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                      butcher
-                      vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                      probably haven't
-                      heard of them accusamus labore sustainable VHS.
+                      Ya, RSIA Karunia Bunda menerima pasien umum, pasien BPJS dan pasien peserta
+                      asuransi yag telah bekerja sama
                     </div>
                   </div>
                 </div>
@@ -700,23 +707,22 @@
                     <h4 class="panel-title">
                       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        What are the Centre’s visiting hours?
+                        Apa saja persyaratan untuk berobat menggunakan BPJS?
                       </a>
                     </h4>
                   </div>
                   <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                      3 wolf moon officia aute,
-                      non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                      moon tempor,
-                      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
-                      anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                      butcher
-                      vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                      probably haven't
-                      heard of them accusamus labore sustainable VHS.
+                      Peserta yang mendapat rujukan dari faskes 1 harus membawa kelengkapan berkas
+                      berupa:
+                      <ul>
+                        <ol>• Surat rujukan asli beserta fotocopy 2 lembar</ol>
+                        <ol>• Surat kontrol asli</ol>
+                        <ol>• Kartu BPJS asli dan fotocopy 2 lembar</ol>
+                        <ol>• KTP asli dan fotocopy 2 lembar</ol>
+                        <ol>• Fotocopy KK 2 lembar</ol>
+                      </ul>
+
                     </div>
                   </div>
                 </div>
@@ -725,23 +731,21 @@
                     <h4 class="panel-title">
                       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        How many visitors are allowed?
+                        Bagaimana alur pelayanan pasien BPJS?
                       </a>
                     </h4>
                   </div>
                   <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                      3 wolf moon officia aute,
-                      non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                      moon tempor,
-                      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
-                      anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                      butcher
-                      vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                      probably haven't
-                      heard of them accusamus labore sustainable VHS.
+                      • Pasien yang sudah mendapatkan rujukan, selanjutnya melakukan pendaftaran di
+                      resepsionis BPJS dengan membawa kelengkapan berkas yang sudah ditentukan
+                      <br />
+                      • Sebelum melakukan pendaftaran ke resepsionis, peserta mengambil nomor antrian,
+                      antrian di buka mulai dari pukul x pagi untuk dokter praktek pagi dan pukul x pagi
+                      untuk praktek sore
+                      <br />
+                      • Setelah mendapatkan nomor antrian, tunggu sampai nomor antrian dipanggil dan
+                      lakukan pendaftaran ke resepsionis.
                     </div>
                   </div>
                 </div>
@@ -756,7 +760,8 @@
                 <span>Janji Temu</span>
               </h3>
             </div>
-            <form name="contact_form" class="default-form contact-form" action="{{route('kirim-jadwal')}}" method="get">
+            <form name="contact_form" class="default-form contact-form" action="{{ route('kirim-jadwal') }}"
+              method="get">
               <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                   <div class="form-group">
@@ -771,7 +776,7 @@
                       <option>Pilih Spesialis</option>
 
                       @foreach ($specialist as $index)
-                        <option value="{{$index->id}}">{{ $index->name }}</option>
+                        <option value="{{ $index->id }}">{{ $index->name }}</option>
                       @endforeach
                     </select>
                   </div>
@@ -789,7 +794,8 @@
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                   </div>
                   <div class="form-group">
-                    <input type="date" id="tgl_berobat" class="tgl_berobat" name="tgl_berobat" placeholder="Tanggal Berobat" required="">
+                    <input type="date" id="tgl_berobat" class="tgl_berobat" name="tgl_berobat"
+                      placeholder="Tanggal Berobat" required="">
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                   </div>
                 </div>
@@ -816,50 +822,50 @@
 
 
 @section('scriptJs')
-<script>
+  <script>
     //get api doctor from select specialist
-    $('#spesialis').change(function(){
-        var specialist = $(this).val();
-        var tgl_berobat = $('#tgl_berobat').val();
-        if(specialist != null && tgl_berobat != null){
-            $.ajax({
-                url: "{{ url('/api/doctor') }}",
-                type: "GET",
-                data: {
-                    specialist: specialist,
-                    tgl_berobat: tgl_berobat
-                },
-                success: function(data){
-                    $('#doctor').empty();
-                    $('#doctor').append('<option>Dokter</option>');
-                    $.each(data, function(key, value){
-                        $('#doctor').append('<option value="'+value.id+'">'+value.name+'</option>');
-                    });
-                }
+    $('#spesialis').change(function() {
+      var specialist = $(this).val();
+      var tgl_berobat = $('#tgl_berobat').val();
+      if (specialist != null && tgl_berobat != null) {
+        $.ajax({
+          url: "{{ url('/api/doctor') }}",
+          type: "GET",
+          data: {
+            specialist: specialist,
+            tgl_berobat: tgl_berobat
+          },
+          success: function(data) {
+            $('#doctor').empty();
+            $('#doctor').append('<option>Dokter</option>');
+            $.each(data, function(key, value) {
+              $('#doctor').append('<option value="' + value.id + '">' + value.name + '</option>');
             });
-        }
+          }
+        });
+      }
     });
-    $('#tgl_berobat').change(function(){
-        var specialist = $('#spesialis').val();
-        var tgl_berobat = $('#tgl_berobat').val();
-        console.log(tgl_berobat);
-        if(specialist != null && tgl_berobat != null){
-            $.ajax({
-                url: "{{ url('/api/doctor') }}",
-                type: "GET",
-                data: {
-                    specialist: specialist,
-                    tgl_berobat: tgl_berobat
-                },
-                success: function(data){
-                    $('#doctor').empty();
-                    $('#doctor').append('<option>Dokter</option>');
-                    $.each(data, function(key, value){
-                        $('#doctor').append('<option value="'+value.id+'">'+value.name+'</option>');
-                    });
-                }
+    $('#tgl_berobat').change(function() {
+      var specialist = $('#spesialis').val();
+      var tgl_berobat = $('#tgl_berobat').val();
+      console.log(tgl_berobat);
+      if (specialist != null && tgl_berobat != null) {
+        $.ajax({
+          url: "{{ url('/api/doctor') }}",
+          type: "GET",
+          data: {
+            specialist: specialist,
+            tgl_berobat: tgl_berobat
+          },
+          success: function(data) {
+            $('#doctor').empty();
+            $('#doctor').append('<option>Dokter</option>');
+            $.each(data, function(key, value) {
+              $('#doctor').append('<option value="' + value.id + '">' + value.name + '</option>');
             });
-        }
+          }
+        });
+      }
     });
-</script>
+  </script>
 @endsection
