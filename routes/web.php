@@ -47,5 +47,9 @@ Route::get('/contact', [App\Http\Controllers\Frontend\Contact\IndexControllers::
 // gallery
 Route::get('/gallery', [App\Http\Controllers\Frontend\Gallery\IndexControllers::class, 'index'])->name('gallery.index');
 
+Route::get('/appointment', [App\Http\Controllers\Frontend\Schedule\ScheduleController::class, 'index'])->name('appointment.index');
+
+Route::get('/service', [App\Http\Controllers\Frontend\Service\IndexControllers::class, 'index'])->name('service.index');
+
 //kirim Jadwal
 Route::get('/kirim-jadwal',[App\Http\Controllers\Frontend\Doctor\IndexControllers::class, 'kirimJadwal'])->name('kirim-jadwal');

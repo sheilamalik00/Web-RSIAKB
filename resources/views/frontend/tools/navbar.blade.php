@@ -14,29 +14,30 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="{{route('home.index')}}">Beranda</a>
+        <li class="@if (request()->is('/')) active @endif">
+          <a href="{{ route('home.index') }}">Beranda</a>
         </li>
-        <li>
-          <a href="{{route('about.index')}}">Tentang Kami</a>
+        {{-- li active is request --}}
+        <li class="@if (request()->is('about')) active @endif">
+          <a href="{{ route('about.index') }}">Tentang Kami</a>
         </li>
-        <li>
-          <a href="service.html">Layanan</a>
+        <li class="@if (request()->is('service')) active @endif">
+          <a href="{{ route('service.index') }}">Layanan</a>
         </li>
-        <li>
-          <a href="{{route('gallery.index')}}">Galeri</a>
+        <li class="@if (request()->is('gallery')) active @endif">
+          <a href="{{ route('gallery.index') }}">Galeri</a>
         </li>
-        <li>
-          <a href="{{route('doctor.index')}}">Dokter Kami</a>
+        <li class="@if (request()->is('doctor')) active @endif">
+          <a href="{{ route('doctor.index') }}">Dokter Kami</a>
         </li>
-        <li>
-          <a href="appointment.html">Buat Janji Temu</a>
+        <li class="@if (request()->is('appointment')) active @endif">
+          <a href="{{ route('appointment.index') }}">Buat Janji Temu</a>
         </li>
-        <li>
-          <a href="{{route('blog.index')}}">Blog</a>
+        <li class="@if (request()->is('blog*')) active @endif">
+          <a href="{{ route('blog.index') }}">Blog</a>
         </li>
-        <li>
-          <a href="{{route('contact.index')}}">Kontak Kami</a>
+        <li class="@if (request()->is('contact')) active @endif">
+          <a href="{{ route('contact.index') }}">Kontak Kami</a>
         </li>
       </ul>
     </div>

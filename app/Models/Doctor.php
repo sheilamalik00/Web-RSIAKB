@@ -23,4 +23,9 @@ class Doctor extends Model
     {
         return $this->hasMany(ScheduleDoctor::class);
     }
+
+    public function get_image()
+    {
+        return $this->image ? asset('storage/doctor/'.$this->image) : asset('img/no-image.png');
+    }
 }
