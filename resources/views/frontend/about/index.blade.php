@@ -2,7 +2,7 @@
 
 @section('content')
   <!--Page Title-->
-  <section class="page-title text-center" style="background-image:url(images/tentangkami.png);">
+  <section class="page-title text-center" style="background-image:url({{asset('asset/frontend/images/tentangkami.png')}});">
     <div class="container">
       <div class="title-text">
         <h1>Tentang Kami</h1>
@@ -22,7 +22,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="images/services/service-one.jpg" class="responsive" alt="story">
+          <img src="{{asset('asset/frontend/images/services/service-one.jpg')}}" class="responsive" alt="story">
         </div>
         <div class="col-md-6">
           <div class="story-content">
@@ -86,54 +86,22 @@
             </p>
           </div>
         </div>
+        @forelse ($gallery as $item)
         <div class="col-md-4 col-sm-6">
           <div class="gallery-item">
-            <img src="images/gallery/gallery-01.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-01.jpg"></a>
-            <h3>Facility 01</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+            <img src="{{$item->getFile()}}" class="img-responsive" alt="gallery-image">
+            <a data-fancybox="images" href=""></a>
+            <h3>{{$item->name}}</h3>
+            <p>{{$item->description}}</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-item">
-            <img src="images/gallery/gallery-02.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-02.jpg"></a>
-            <h3>Facility 02</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+        @empty
+        <div class="col-md-12">
+          <div class="alert alert-warning">
+            <p>Tidak Ada Foto Yang di upload</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-item">
-            <img src="images/gallery/gallery-03.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-03.jpg"></a>
-            <h3>Facility 03</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-item">
-            <img src="images/gallery/gallery-04.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-04.jpg"></a>
-            <h3>Facility 04</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-item">
-            <img src="images/gallery/gallery-05.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-05.jpg"></a>
-            <h3>Facility 05</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-item">
-            <img src="images/gallery/gallery-06.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-06.jpg"></a>
-            <h3>Facility 06</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-          </div>
-        </div>
+        @endforelse
       </div>
     </div>
   </section>

@@ -30,48 +30,28 @@
             </p>
           </div>
         </div>
+        @forelse ($galleryVideo as $item)
         <div class="col-sm-6">
           <div class="video-gallery-item">
             <div class="image-holder">
-              <img src="images/gallery/video-thumb-01.jpg" class="img-responsive" alt="video-gallery">
-              <a data-fancybox href="https://www.youtube.com/watch?v=h-h5Mhlt6O0"><i class="fa fa-play"></i></a>
+                <video class="img-responsive" controls>
+                  <source src="{{$item->getFile()}}" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              {{-- <img src="images/gallery/video-thumb-01.jpg" class="" alt="video-gallery"> --}}
+              <a data-fancybox href="{{$item->getFile()}}"><i class="fa fa-play"></i></a>
             </div>
-            <h3>January 2018 Florida Conference</h3>
+            <h3>{{$item->name}}</h3>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="video-gallery-item">
-            <div class="image-holder">
-              <img src="images/gallery/video-thumb-02.jpg" class="img-responsive" alt="video-gallery">
-              <a data-fancybox href="https://www.youtube.com/watch?v=h-h5Mhlt6O0">
-                <i class="fa fa-play"></i>
-              </a>
-            </div>
-            <h3>December 2017 los angeles Conference</h3>
+        @empty
+        <div class="col-md-12">
+          <div class="alert alert-warning">
+            <p>Tidak Ada Media Yang di upload</p>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="video-gallery-item">
-            <div class="image-holder">
-              <img src="images/gallery/video-thumb-03.jpg" class="img-responsive" alt="video-gallery">
-              <a data-fancybox href="https://www.youtube.com/watch?v=h-h5Mhlt6O0">
-                <i class="fa fa-play"></i>
-              </a>
-            </div>
-            <h3>November 2017 Texas Conference</h3>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="video-gallery-item">
-            <div class="image-holder">
-              <img src="images/gallery/video-thumb-04.jpg" class="img-responsive" alt="video-gallery">
-              <a data-fancybox href="https://www.youtube.com/watch?v=h-h5Mhlt6O0">
-                <i class="fa fa-play"></i>
-              </a>
-            </div>
-            <h3>October 2017 san francisco Conference</h3>
-          </div>
-        </div>
+        @endforelse
+
       </div>
     </div>
   </section>
@@ -84,59 +64,28 @@
             <h3>Koleksi Foto
               <span>dari Rumah Sakit Kami</span>
             </h3>
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overv-
+            {{-- <p>Leverage agile frameworks to provide a robust synopsis for high level overv-
               <br>iews. Iterative approaches to corporate strategy...
-            </p>
+            </p> --}}
           </div>
         </div>
+        @forelse ($galleryImage as $item)
         <div class="col-md-4 col-sm-6">
           <div class="gallery-item">
-            <img src="images/gallery/gallery-01.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-01.jpg"></a>
-            <h3>Facility 01</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+            <img src="{{$item->getFile()}}" class="img-responsive" alt="gallery-image">
+            <a data-fancybox="images" href="{{$item->getFile()}}"></a>
+            <h3>{{$item->name}}</h3>
+            <p>{{$item->description}}</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-item">
-            <img src="images/gallery/gallery-02.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-02.jpg"></a>
-            <h3>Facility 02</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+        @empty
+        <div class="col-md-12">
+          <div class="alert alert-warning">
+            <p>Tidak Ada Foto Yang di upload</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-item">
-            <img src="images/gallery/gallery-03.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-03.jpg"></a>
-            <h3>Facility 03</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-item">
-            <img src="images/gallery/gallery-04.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-04.jpg"></a>
-            <h3>Facility 04</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-item">
-            <img src="images/gallery/gallery-05.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-05.jpg"></a>
-            <h3>Facility 05</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-item">
-            <img src="images/gallery/gallery-06.jpg" class="img-responsive" alt="gallery-image">
-            <a data-fancybox="images" href="images/gallery/gallery-06.jpg"></a>
-            <h3>Facility 06</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-          </div>
-        </div>
+        @endforelse
+
       </div>
     </div>
   </section>

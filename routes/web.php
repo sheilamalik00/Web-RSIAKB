@@ -26,6 +26,7 @@ Auth::routes();
 
 
 Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/', [App\Http\Controllers\Backend\Dashboard\DashboardController::class, 'index'])->name('dashboard');
     Route::resource('category', App\Http\Controllers\Backend\Blog\CategoryBlogControllers::class);
     Route::resource('blog', App\Http\Controllers\Backend\Blog\BlogControllers::class);
 
@@ -34,6 +35,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('doctor', App\Http\Controllers\Backend\Doctor\DoctorControllers::class);
     Route::resource('schedule', App\Http\Controllers\Backend\Doctor\ScheduleDoctorControllers::class);
 
+    Route::resource('gallery', App\Http\Controllers\Backend\Gallery\GalleryControllers::class);
 });
 //frontend
 Route::get('/blog', [App\Http\Controllers\Frontend\Blog\IndexControllers::class, 'index'])->name('blog.index');
