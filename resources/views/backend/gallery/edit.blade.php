@@ -31,7 +31,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="{{route('admin.doctor.store')}}" method="POST" enctype="multipart/form-data">
+              <form action="{{route('admin.gallery.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="card-body">
                   <div class="form-group">
@@ -43,7 +43,7 @@
                     <select name="type" class="form-control select2" style="width: 100%;">
                       <option selected="selected" value="">Choose</option>
                       <option value="1">Video</option>
-                      <option value="2">Gallery</option>
+                      <option value="2">Image</option>
                     </select>
                   </div>
                   <div class="form-group">
@@ -85,4 +85,4 @@
     </section>
     <!-- /.content -->
   </div>
-@endsection
+  @endsection
