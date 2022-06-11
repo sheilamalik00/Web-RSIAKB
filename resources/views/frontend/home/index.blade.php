@@ -28,9 +28,7 @@
           <div class="col-12">
             <!-- Slide Content Start-->
             <div class="content style text-right">
-              <h2 class="text-white">We Care About <br>Your Health</h2>
-              <p class="tag-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-              <a href="#" class="btn btn-main btn-white">about us</a>
+              <h2 class="text-white">Kepuasan Anda adalah <br>Prioritas Kami</h2>
             </div>
             <!-- Slide Content End-->
           </div>
@@ -117,7 +115,7 @@
                     </figure>
                   </div>
                   <h6>Poli Kebidanan dan Kandungan</h6>
-                  <p>adalah Poliklinik yang bertujuan untuk membantu pasien dengan kasus yang berhubungan
+                  <p>Poliklinik yang bertujuan untuk membantu pasien dengan kasus yang berhubungan
 dengan kehamilan dan penyakit kandungan.</p>
                 </div>
               </div>
@@ -131,8 +129,8 @@ dengan kehamilan dan penyakit kandungan.</p>
                     </figure>
                   </div>
                   <h6>Poli Spesialis Anak</h6>
-                  <p>adalah layanan pemeriksaan dan pengobatan terhadap bayi dan anak sakit oleh Dokter
-Spesialis Anak yang meliputi : Pemeriksaan Kesehatan Anak, Pemeriksaan Tumbuh Kembang,
+                  <p>Layanan pemeriksaan dan pengobatan terhadap bayi dan anak sakit oleh Dokter
+Spesialis Anak yang meliputi: Pemeriksaan Kesehatan Anak, Pemeriksaan Tumbuh Kembang,
 dan Imunisasi.</p>
                 </div>
               </div>
@@ -146,7 +144,7 @@ dan Imunisasi.</p>
                     </figure>
                   </div>
                   <h6>Poli Penyakit Dalam</h6>
-                  <p>Adalah unit layanan yang menangani konsultasi dan penanganan masalah kesehatan organ dalam
+                  <p>Unit layanan yang menangani konsultasi dan penanganan masalah kesehatan organ dalam
 tanpa bedah seperti diabetes, hipertensi, ginjal, saluran cerna, infeksi, alergi, imunologi, geriatri, dan
 sebagainya</p>
                 </div>
@@ -162,10 +160,8 @@ sebagainya</p>
                   </div>
                   <h6>Poli Bedah</h6>
                   <p>Adalah unit pelayanan yang diberikan kepada pasien yang membutuhkan pelayanan kesehatan
-melalui proses pembedahan umum, seperti pasien pasca kecelakaan, Operasi Kecil, Perawatan luka
-
-biasa/luka oleh karena DM, Perawatan luka post Operasi Hernia, Usus Buntu, Haemoroid (Wasir),
-dan lain – lain serta Konsultasi Seputar Proses Pembedahan.</p>
+melalui proses pembedahan umum, seperti pasien pasca kecelakaan, operasi Kecil, perawatan luka biasa/luka oleh karena DM, perawatan luka pasca operasi Hernia, Usus Buntu, Haemoroid (Wasir),
+dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                 </div>
               </div>
             </div>
@@ -442,9 +438,9 @@ Instalasi Rawat Intensif RSIA KArunia Bunda terdiri dari ICU, HCU, & PERINA.</p>
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Psycology</h6>
+                <h6>Laboratorium</h6>
               </a>
-              <p>pelayanan pemeriksaan spesimen klinik di bidang hematologi, kimia klinik, mikrobiologi klinik,
+              <p>Pelayanan pemeriksaan spesimen klinik di bidang hematologi, kimia klinik, mikrobiologi klinik,
 parasitologi klinik, dan imunologi klinik.</p>
             </div>
           </div>
@@ -716,11 +712,11 @@ serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehata
                       Peserta yang mendapat rujukan dari faskes 1 harus membawa kelengkapan berkas
                       berupa:
                       <ul>
-                        <ol>• Surat rujukan asli beserta fotocopy 2 lembar</ol>
-                        <ol>• Surat kontrol asli</ol>
-                        <ol>• Kartu BPJS asli dan fotocopy 2 lembar</ol>
-                        <ol>• KTP asli dan fotocopy 2 lembar</ol>
-                        <ol>• Fotocopy KK 2 lembar</ol>
+                        • Surat rujukan asli beserta fotocopy 2 lembar
+                        • Surat kontrol asli
+                        • Kartu BPJS asli dan fotocopy 2 lembar
+                        • KTP asli dan fotocopy 2 lembar
+                        • Fotocopy KK 2 lembar
                       </ul>
 
                     </div>
@@ -738,11 +734,9 @@ serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehata
                   <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="panel-body">
                       • Pasien yang sudah mendapatkan rujukan, selanjutnya melakukan pendaftaran di
-                      resepsionis BPJS dengan membawa kelengkapan berkas yang sudah ditentukan
+                      resepsionis dengan membawa kelengkapan berkas yang sudah ditentukan
                       <br />
-                      • Sebelum melakukan pendaftaran ke resepsionis, peserta mengambil nomor antrian,
-                      antrian di buka mulai dari pukul x pagi untuk dokter praktek pagi dan pukul x pagi
-                      untuk praktek sore
+                      • Sebelum melakukan pendaftaran ke resepsionis, peserta mengambil nomor antrian
                       <br />
                       • Setelah mendapatkan nomor antrian, tunggu sampai nomor antrian dipanggil dan
                       lakukan pendaftaran ke resepsionis.
