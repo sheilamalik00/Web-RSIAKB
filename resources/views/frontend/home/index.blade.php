@@ -159,7 +159,7 @@ sebagainya</p>
                     </figure>
                   </div>
                   <h6>Poli Bedah</h6>
-                  <p>Adalah unit pelayanan yang diberikan kepada pasien yang membutuhkan pelayanan kesehatan
+                  <p>Unit pelayanan yang diberikan kepada pasien yang membutuhkan pelayanan kesehatan
 melalui proses pembedahan umum, seperti pasien pasca kecelakaan, operasi Kecil, perawatan luka biasa/luka oleh karena DM, perawatan luka pasca operasi Hernia, Usus Buntu, Haemoroid (Wasir),
 dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                 </div>
@@ -207,27 +207,11 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                 <div class="col-md-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>dormitory</h3>
+                      <h3>Farmasi</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added. then a
-                        dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added. then a dental
-                        prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Instalasi farmasi rumah sakit merupakan suatu fasilitas rumah sakit yang menjadi tempat penyelenggaraan semua kegiatan untuk keperluan rumah sakit itu sendiri. Instalasi farmasi rumah sakit bertugas untuk menangani obat-obatan. Fasilitas dari sebuah instalasi farmasi rumah sakit adalah apotek, yang berfungsi untuk memudahkan pasien atau konsumen dalam mencari obat yang dibutuhkan.</p>
                     </div>
-                    {{-- <ul class="content-list">
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                    </ul> --}}
                     <a href="#" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -241,27 +225,11 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                 <div class="col-md-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>orthopedic</h3>
+                      <h3>Laboratorium</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Instalasi laboratorium merupakan salah satu instalasi yang ada di rumah sakit. Instalasi laboratorium merupakan bagian dari pelayanan penunjang yang memiliki tujuan membantu diagnosa suatu penyakit sehingga dokter dapat menangani suatu penyakit dengan baik, tepat, cepat dan akurat. Selain itu, instalasi laboratorium juga bertujuan untuk menentukan resiko terhadap suatu penyakit dengan harapan suatu penyakit dapat terdeteksi secara dini</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                    </ul>
                     <a href="#" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -275,27 +243,11 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                 <div class="col-md-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>sonogram</h3>
+                      <h3>Rontgen</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Rontgen merupakan prosedur pemeriksaan yang dilakukan untuk melihat kondisi dari tulang, persendian hingga organ-organ yang terdapat di dalam tubuh. Terdapat beberapa kondisi dan penyakit yang dapat di deteksi dengan melakukan rontgen, diantaranya adalah patah tulang, osteoporosis, infeksi, gangguan pencernaan, pembengkakkan jantung serta tumor. Dalam beberapa kasus diperlukan tambahan obat kontras yang perlu diminum atau disuntikkan untuk memperjelas dan memperlihatkan gambaran detail fungsi dari organ yang berada di bagian dalam.</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                    </ul>
                     <a href="#" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -309,27 +261,11 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                 <div class="col-md-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>x-ray</h3>
+                      <h3>Ruang Operasi</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Ruang operasi merupakan suatu unit khusus pada rumah sakit yang berfungsi sebagai daerah pelayanan kritis yang mengutamakan aspek hirarki zonasi sterilitas. Ruang operasi digunakan untuk melakukan tindakan operasi dan atau pembedahan.</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                    </ul>
                     <a href="#" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -343,27 +279,11 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                 <div class="col-md-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>diagnostic</h3>
+                      <h3>Ruang Persalinan</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Ruangan persalinan merupakan unit pelayanan pada rumah sakit yang berfungsi untuk membantu proses kelahiran bayi.</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                    </ul>
                     <a href="#" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
