@@ -110,7 +110,7 @@
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/resource/1.png') }}" alt="">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Kebidanan & Kandungan.png') }}" width="10%" alt="Poli Kebidanan dan Kandungan">
                       </a>
                     </figure>
                   </div>
@@ -124,7 +124,7 @@ dengan kehamilan dan penyakit kandungan.</p>
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/resource/2.png') }}" alt="">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Spesialis Anak.png') }}" width="10%" alt="poli anak">
                       </a>
                     </figure>
                   </div>
@@ -139,7 +139,7 @@ dan Imunisasi.</p>
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/resource/3.png') }}" alt="">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Penyakit Dalam.png') }}" width="10%" alt="Poli Penyakit Dalam">
                       </a>
                     </figure>
                   </div>
@@ -154,7 +154,7 @@ sebagainya</p>
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/resource/4.png') }}" alt="">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Bedah.png') }}" width="10%" alt="Poli Bedah">
                       </a>
                     </figure>
                   </div>
@@ -332,13 +332,13 @@ atau penyebab lainnya.</p>
         <div class="item">
           <div class="inner-box">
             <div class="img_holder">
-              <a href="service.html">
+              <a href="">
                 <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
-              <a href="service.html">
+              <a href="">
                 <h6>ICU</h6>
               </a>
               <p>adalah ruang khusus untuk pasien krisis yang memerlukan perawatan intensif dan observasi
@@ -351,13 +351,13 @@ Instalasi Rawat Intensif RSIA KArunia Bunda terdiri dari ICU, HCU, & PERINA.</p>
         <div class="item">
           <div class="inner-box">
             <div class="img_holder">
-              <a href="service.html">
+              <a href="">
                 <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
-              <a href="service.html">
+              <a href="">
                 <h6>Laboratorium</h6>
               </a>
               <p>Pelayanan pemeriksaan spesimen klinik di bidang hematologi, kimia klinik, mikrobiologi klinik,
@@ -368,13 +368,13 @@ parasitologi klinik, dan imunologi klinik.</p>
         <div class="item">
           <div class="inner-box">
             <div class="img_holder">
-              <a href="service.html">
+              <a href="">
                 <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
-              <a href="service.html">
+              <a href="">
                 <h6>Radiologi</h6>
               </a>
               <p>Radiologi adalah bagian dari ilmu kedokteran yang mempelajari tentang teknologi pencitraan, baik
@@ -386,7 +386,7 @@ manusia untuk mendeteksi suatu penyakit.</p>
         <div class="item">
           <div class="inner-box">
             <div class="img_holder">
-              <a href="service.html">
+              <a href="">
                 <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
               </a>
             </div>
