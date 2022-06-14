@@ -28,9 +28,7 @@
           <div class="col-12">
             <!-- Slide Content Start-->
             <div class="content style text-right">
-              <h2 class="text-white">We Care About <br>Your Health</h2>
-              <p class="tag-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-              <a href="#" class="btn btn-main btn-white">about us</a>
+              <h2 class="text-white">Kepuasan Anda adalah <br>Prioritas Kami</h2>
             </div>
             <!-- Slide Content End-->
           </div>
@@ -117,7 +115,7 @@
                     </figure>
                   </div>
                   <h6>Poli Kebidanan dan Kandungan</h6>
-                  <p>adalah Poliklinik yang bertujuan untuk membantu pasien dengan kasus yang berhubungan
+                  <p>Poliklinik yang bertujuan untuk membantu pasien dengan kasus yang berhubungan
 dengan kehamilan dan penyakit kandungan.</p>
                 </div>
               </div>
@@ -131,8 +129,8 @@ dengan kehamilan dan penyakit kandungan.</p>
                     </figure>
                   </div>
                   <h6>Poli Spesialis Anak</h6>
-                  <p>adalah layanan pemeriksaan dan pengobatan terhadap bayi dan anak sakit oleh Dokter
-Spesialis Anak yang meliputi : Pemeriksaan Kesehatan Anak, Pemeriksaan Tumbuh Kembang,
+                  <p>Layanan pemeriksaan dan pengobatan terhadap bayi dan anak sakit oleh Dokter
+Spesialis Anak yang meliputi: Pemeriksaan Kesehatan Anak, Pemeriksaan Tumbuh Kembang,
 dan Imunisasi.</p>
                 </div>
               </div>
@@ -146,7 +144,7 @@ dan Imunisasi.</p>
                     </figure>
                   </div>
                   <h6>Poli Penyakit Dalam</h6>
-                  <p>Adalah unit layanan yang menangani konsultasi dan penanganan masalah kesehatan organ dalam
+                  <p>Unit layanan yang menangani konsultasi dan penanganan masalah kesehatan organ dalam
 tanpa bedah seperti diabetes, hipertensi, ginjal, saluran cerna, infeksi, alergi, imunologi, geriatri, dan
 sebagainya</p>
                 </div>
@@ -161,11 +159,9 @@ sebagainya</p>
                     </figure>
                   </div>
                   <h6>Poli Bedah</h6>
-                  <p>Adalah unit pelayanan yang diberikan kepada pasien yang membutuhkan pelayanan kesehatan
-melalui proses pembedahan umum, seperti pasien pasca kecelakaan, Operasi Kecil, Perawatan luka
-
-biasa/luka oleh karena DM, Perawatan luka post Operasi Hernia, Usus Buntu, Haemoroid (Wasir),
-dan lain – lain serta Konsultasi Seputar Proses Pembedahan.</p>
+                  <p>Unit pelayanan yang diberikan kepada pasien yang membutuhkan pelayanan kesehatan
+melalui proses pembedahan umum, seperti pasien pasca kecelakaan, operasi Kecil, perawatan luka biasa/luka oleh karena DM, perawatan luka pasca operasi Hernia, Usus Buntu, Haemoroid (Wasir),
+dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                 </div>
               </div>
             </div>
@@ -211,27 +207,11 @@ dan lain – lain serta Konsultasi Seputar Proses Pembedahan.</p>
                 <div class="col-md-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>dormitory</h3>
+                      <h3>Farmasi</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added. then a
-                        dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added. then a dental
-                        prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Instalasi farmasi rumah sakit merupakan suatu fasilitas rumah sakit yang menjadi tempat penyelenggaraan semua kegiatan untuk keperluan rumah sakit itu sendiri. Instalasi farmasi rumah sakit bertugas untuk menangani obat-obatan. Fasilitas dari sebuah instalasi farmasi rumah sakit adalah apotek, yang berfungsi untuk memudahkan pasien atau konsumen dalam mencari obat yang dibutuhkan.</p>
                     </div>
-                    {{-- <ul class="content-list">
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                    </ul> --}}
                     <a href="#" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -245,27 +225,11 @@ dan lain – lain serta Konsultasi Seputar Proses Pembedahan.</p>
                 <div class="col-md-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>orthopedic</h3>
+                      <h3>Laboratorium</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Instalasi laboratorium merupakan salah satu instalasi yang ada di rumah sakit. Instalasi laboratorium merupakan bagian dari pelayanan penunjang yang memiliki tujuan membantu diagnosa suatu penyakit sehingga dokter dapat menangani suatu penyakit dengan baik, tepat, cepat dan akurat. Selain itu, instalasi laboratorium juga bertujuan untuk menentukan resiko terhadap suatu penyakit dengan harapan suatu penyakit dapat terdeteksi secara dini</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                    </ul>
                     <a href="#" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -279,27 +243,11 @@ dan lain – lain serta Konsultasi Seputar Proses Pembedahan.</p>
                 <div class="col-md-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>sonogram</h3>
+                      <h3>Rontgen</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Rontgen merupakan prosedur pemeriksaan yang dilakukan untuk melihat kondisi dari tulang, persendian hingga organ-organ yang terdapat di dalam tubuh. Terdapat beberapa kondisi dan penyakit yang dapat di deteksi dengan melakukan rontgen, diantaranya adalah patah tulang, osteoporosis, infeksi, gangguan pencernaan, pembengkakkan jantung serta tumor. Dalam beberapa kasus diperlukan tambahan obat kontras yang perlu diminum atau disuntikkan untuk memperjelas dan memperlihatkan gambaran detail fungsi dari organ yang berada di bagian dalam.</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                    </ul>
                     <a href="#" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -313,27 +261,11 @@ dan lain – lain serta Konsultasi Seputar Proses Pembedahan.</p>
                 <div class="col-md-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>x-ray</h3>
+                      <h3>Ruang Operasi</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Ruang operasi merupakan suatu unit khusus pada rumah sakit yang berfungsi sebagai daerah pelayanan kritis yang mengutamakan aspek hirarki zonasi sterilitas. Ruang operasi digunakan untuk melakukan tindakan operasi dan atau pembedahan.</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                    </ul>
                     <a href="#" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -347,27 +279,11 @@ dan lain – lain serta Konsultasi Seputar Proses Pembedahan.</p>
                 <div class="col-md-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>diagnostic</h3>
+                      <h3>Ruang Persalinan</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental
-                        prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Ruangan persalinan merupakan unit pelayanan pada rumah sakit yang berfungsi untuk membantu proses kelahiran bayi.</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                      <li>
-                        <i class="fa fa-dot-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                      </li>
-                    </ul>
                     <a href="#" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -442,9 +358,9 @@ Instalasi Rawat Intensif RSIA KArunia Bunda terdiri dari ICU, HCU, & PERINA.</p>
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Psycology</h6>
+                <h6>Laboratorium</h6>
               </a>
-              <p>pelayanan pemeriksaan spesimen klinik di bidang hematologi, kimia klinik, mikrobiologi klinik,
+              <p>Pelayanan pemeriksaan spesimen klinik di bidang hematologi, kimia klinik, mikrobiologi klinik,
 parasitologi klinik, dan imunologi klinik.</p>
             </div>
           </div>
@@ -716,11 +632,11 @@ serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehata
                       Peserta yang mendapat rujukan dari faskes 1 harus membawa kelengkapan berkas
                       berupa:
                       <ul>
-                        <ol>• Surat rujukan asli beserta fotocopy 2 lembar</ol>
-                        <ol>• Surat kontrol asli</ol>
-                        <ol>• Kartu BPJS asli dan fotocopy 2 lembar</ol>
-                        <ol>• KTP asli dan fotocopy 2 lembar</ol>
-                        <ol>• Fotocopy KK 2 lembar</ol>
+                        • Surat rujukan asli beserta fotocopy 2 lembar
+                        • Surat kontrol asli
+                        • Kartu BPJS asli dan fotocopy 2 lembar
+                        • KTP asli dan fotocopy 2 lembar
+                        • Fotocopy KK 2 lembar
                       </ul>
 
                     </div>
@@ -738,11 +654,9 @@ serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehata
                   <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="panel-body">
                       • Pasien yang sudah mendapatkan rujukan, selanjutnya melakukan pendaftaran di
-                      resepsionis BPJS dengan membawa kelengkapan berkas yang sudah ditentukan
+                      resepsionis dengan membawa kelengkapan berkas yang sudah ditentukan
                       <br />
-                      • Sebelum melakukan pendaftaran ke resepsionis, peserta mengambil nomor antrian,
-                      antrian di buka mulai dari pukul x pagi untuk dokter praktek pagi dan pukul x pagi
-                      untuk praktek sore
+                      • Sebelum melakukan pendaftaran ke resepsionis, peserta mengambil nomor antrian
                       <br />
                       • Setelah mendapatkan nomor antrian, tunggu sampai nomor antrian dipanggil dan
                       lakukan pendaftaran ke resepsionis.
