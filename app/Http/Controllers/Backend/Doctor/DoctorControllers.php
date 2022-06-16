@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend\Doctor;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Backend\DoctorRequest;
 use App\Models\Doctor;
 use App\Models\SpecialistDoctor;
 use Illuminate\Http\Request;
@@ -56,12 +57,13 @@ class DoctorControllers extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(DoctorRequest $request)
     {
         $this->validate($request, [
             'name' => 'required|string|max:255',
             'specialist' => 'required',
         ]);
+        // $doctor = Doctor::create($request->all());
         $doctor = Doctor::create([
             'name' => $request->name,
             'specialist_doctor_id' => $request->specialist,

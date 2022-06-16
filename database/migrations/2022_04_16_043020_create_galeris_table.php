@@ -18,7 +18,7 @@ class CreateGalerisTable extends Migration
             $table->string('name');
             $table->string('image')->nullable();
             $table->string('video')->nullable();
-            $table->string('url')->nullable();
+            $table->Text('url')->nullable();
             $table->string('type')->nullable();
             // $table->text('deskripsi_foto');
             $table->text('description');
