@@ -318,7 +318,6 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Unit Gawat Darurat</span>
               <a href="#">
                 <h6>UGD</h6>
               </a>
@@ -337,7 +336,6 @@ atau penyebab lainnya.</p>
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
               <a href="service.html">
                 <h6>ICU</h6>
               </a>
@@ -356,7 +354,6 @@ Instalasi Rawat Intensif RSIA KArunia Bunda terdiri dari ICU, HCU, & PERINA.</p>
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
               <a href="service.html">
                 <h6>Laboratorium</h6>
               </a>
@@ -373,7 +370,6 @@ parasitologi klinik, dan imunologi klinik.</p>
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
               <a href="service.html">
                 <h6>Radiologi</h6>
               </a>
@@ -391,7 +387,6 @@ manusia untuk mendeteksi suatu penyakit.</p>
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
               <a href="service.html">
                 <h6>Farmasi</h6>
               </a>
@@ -409,7 +404,6 @@ Pelayanan Farmasi Klinik</p>
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
               <a href="service.html">
                 <h6>Instalasi Gizi</h6>
               </a>
@@ -631,14 +625,13 @@ serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehata
                     <div class="panel-body">
                       Peserta yang mendapat rujukan dari faskes 1 harus membawa kelengkapan berkas
                       berupa:
-                      <ul>
-                        • Surat rujukan asli beserta fotocopy 2 lembar
-                        • Surat kontrol asli
-                        • Kartu BPJS asli dan fotocopy 2 lembar
-                        • KTP asli dan fotocopy 2 lembar
-                        • Fotocopy KK 2 lembar
-                      </ul>
-
+                      <ol>
+                        <li>Surat rujukan asli beserta fotocopy 2 lembar</li>
+                        <li>Surat kontrol asli</li>
+                        <li>Kartu BPJS asli dan fotocopy 2 lembar</li>
+                        <li>KTP asli dan fotocopy 2 lembar</li>
+                        <li>Fotocopy KK 2 lembar</li>
+                      </ol>
                     </div>
                   </div>
                 </div>

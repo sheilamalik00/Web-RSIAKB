@@ -46,20 +46,13 @@
                     <h4 class="panel-title">
                       <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
                         aria-expanded="true" aria-controls="collapseOne">
-                        Why Should I choose Medical Health
+                        Apakah RSIA Karunia Bunda menerima pasien umum, BPJS dan asuransi?
                       </a>
                     </h4>
                   </div>
                   <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                      wolf moon officia aute,
-                      non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                      moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                      Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                      Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                      aesthetic
-                      synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    Ya, RSIA Karunia Bunda menerima pasien umum, pasien BPJS dan pasien peserta asuransi yag telah bekerja sama
                     </div>
                   </div>
                 </div>
@@ -68,20 +61,21 @@
                     <h4 class="panel-title">
                       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        What are the Centre’s visiting hours?
+                        Apa saja persyaratan untuk berobat menggunakan BPJS?
                       </a>
                     </h4>
                   </div>
                   <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                      wolf moon officia aute,
-                      non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                      moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                      Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                      Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                      aesthetic
-                      synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    Peserta yang mendapat rujukan dari faskes 1 harus membawa kelengkapan berkas
+                    berupa:
+                    <ol>
+                        <li>Surat rujukan asli beserta fotocopy 2 lembar</li>
+                        <li>Surat kontrol asli</li>
+                        <li>Kartu BPJS asli dan fotocopy 2 lembar</li>
+                        <li>KTP asli dan fotocopy 2 lembar</li>
+                        <li>Fotocopy KK 2 lembar</li>
+                      </ol>
                     </div>
                   </div>
                 </div>
@@ -90,20 +84,19 @@
                     <h4 class="panel-title">
                       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        How many visitors are allowed?
+                        Bagaimana alur pelayanan pasien BPJS?
                       </a>
                     </h4>
                   </div>
                   <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                      wolf moon officia aute,
-                      non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                      moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                      Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                      Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                      aesthetic
-                      synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      • Pasien yang sudah mendapatkan rujukan, selanjutnya melakukan pendaftaran di
+                      resepsionis dengan membawa kelengkapan berkas yang sudah ditentukan
+                      <br />
+                      • Sebelum melakukan pendaftaran ke resepsionis, peserta mengambil nomor antrian
+                      <br />
+                      • Setelah mendapatkan nomor antrian, tunggu sampai nomor antrian dipanggil dan
+                      lakukan pendaftaran ke resepsionis.
                     </div>
                   </div>
                 </div>
@@ -153,8 +146,8 @@
   <section class="service-section bg-gray section">
     <div class="container">
       <div class="section-title text-center">
-        <h3>Provided
-          <span>Services</span>
+        <h3>Layanan
+          <span>Penunjang</span>
         </h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. qui suscipit atque <br>
           fugiat officia corporis rerum eaque neque totam animi, sapiente culpa. Architecto!</p>
@@ -168,11 +161,13 @@
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Dormitory</h6>
+                <h6>UGD</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>adalah unit pelayanan yang memberikan pelayanan pertama pada pasien dengan ancaman kematian
+dan atau resiko kecacatan secara terpadu yang memilki potensi untuk mengalami kondisi
+kegawat darutatan, baik karena penyakit, kecelakaan, keracunan, diserang binatang buas,
+atau penyebab lainnya.</p>
             </div>
           </div>
         </div>
@@ -184,11 +179,13 @@
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Germs Protection</h6>
+                <h6>ICU</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>adalah ruang khusus untuk pasien krisis yang memerlukan perawatan intensif dan observasi
+berkelanjutan, dilengkapi dengan berbagai peralatan modern untuk mendukung monitoring pasien
+seperti pasien monitor, ventilator, DC Shock (defibrillator), incubator, infant warmer, dan C-Pap.
+Instalasi Rawat Intensif RSIA KArunia Bunda terdiri dari ICU, HCU, & PERINA.</p>
             </div>
           </div>
         </div>
@@ -200,11 +197,11 @@
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Psycology</h6>
+                <h6>Laboratorium</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>Pelayanan pemeriksaan spesimen klinik di bidang hematologi, kimia klinik, mikrobiologi klinik,
+parasitologi klinik, dan imunologi klinik.</p>
             </div>
           </div>
         </div>
@@ -216,11 +213,12 @@
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Dormitory</h6>
+                <h6>Radiologi</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>Radiologi adalah bagian dari ilmu kedokteran yang mempelajari tentang teknologi pencitraan, baik
+gelombang elektromagnetik maupun gelombang mekanik guna memindai bagian dalam tubuh
+manusia untuk mendeteksi suatu penyakit.</p>
             </div>
           </div>
         </div>
@@ -234,9 +232,11 @@
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Germs Protection</h6>
+                <h6>Farmasi</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>Pelayanan obat atas resep dokter
+Pelayanan Informasi Obat (PIO)
+Pelayanan Farmasi Klinik</p>
             </div>
           </div>
         </div>
@@ -248,11 +248,12 @@
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
               <a href="service.html">
-                <h6>Psycology</h6>
+                <h6>Instalasi Gizi</h6>
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+              <p>Merupakan salah satu Instalasi Pelayanan Penunjang Medis yang memberikan pelayanan gizi
+di rumah sakit untuk memenuhi kebutuhan gizi baik pasien Rawat Inap maupun Rawat Jalan
+serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehatan.</p>
             </div>
           </div>
         </div>
