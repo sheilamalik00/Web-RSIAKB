@@ -17,6 +17,51 @@
   </section>
   <!--End Page Title-->
 
+  <!--team section-->
+  <section class="team-section section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h3>Pelayanan di RSIA Karunia Bunda
+          <span>Kami</span>
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum
+          <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="team-member">
+            <div class="contents">
+              <h4 class="text-center">Pelayanan Medis</h4>
+              <p>
+                1. Poli Kebidanan dan Kandungan <br />
+                2. Poli Anak <br />
+                3. Poli Penyakit Dalam <br />
+                4. Polik Bedah <br />
+                5. Poli Gizi
+              </p>
+              {{-- <a href="#" class="btn btn-main">read more</a> --}}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="team-member">
+            <div class="contents">
+              <h4 class=" text-center">Spesialis Pelayanan medis</h4>
+              <p>
+                1. Spesialis anestesi<br />
+                2. Spesialis radiologi<br />
+                3. Spesialis patologi klinik<br />
+                4. Spesialis patologi anatomi<br />
+              </p>
+              {{-- <a href="#" class="btn btn-main">read more</a> --}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End team section-->
   <section class="service-overview section">
     <div class="container">
       <div class="row">
@@ -150,7 +195,7 @@
   </section>
 
   <!--Service Section-->
-  <section class="service-section bg-gray section">
+  {{-- <section class="service-section bg-gray section">
     <div class="container">
       <div class="section-title text-center">
         <h3>Provided
@@ -258,6 +303,6 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!--End Service Section-->
 @endsection
