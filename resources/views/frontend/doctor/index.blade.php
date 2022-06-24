@@ -22,12 +22,9 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-title text-center">
-            <h3>Dokter Terbaik
+            <h3>Dokter 
               <span>Kami</span>
             </h3>
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overv-
-              <br>iews. Iterative approaches to corporate strategy...
-            </p>
           </div>
           <!-- Nav tabs -->
           <div class="tabs">

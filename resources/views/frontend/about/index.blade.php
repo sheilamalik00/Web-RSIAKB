@@ -81,9 +81,6 @@
             <h3>Kumpulan Foto
               <span>dari Rumah Sakit Kami</span>
             </h3>
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overv-
-              <br>iews. Iterative approaches to corporate strategy...
-            </p>
           </div>
         </div>
         @forelse ($gallery as $item)

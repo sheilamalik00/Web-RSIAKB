@@ -22,19 +22,10 @@
       <div class="row">
         <div class="col-md-6">
           <div class="content-block">
-            <h2>Clinical And <br>Medical Education</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius optio repellendus quasi nisi vitae
-              laboriosam explicabo eligendi sapiente in.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, dolorum esse tempora id architecto
-              laboriosam.
+            <h2>Poli Kebidanan & <br>Kandungan</h2>
+            <p>Poliklinik yang bertujuan untuk membantu pasien dengan kasus yang berhubungan dengan kehamilan dan penyakit kandungan
             </p>
-            <ul>
-              <li><i class="fa fa-caret-right"></i>vitae laboriosam explicabo eligendi sapiente</li>
-              <li><i class="fa fa-caret-right"></i>consectetur adipisicing elit. Beatae</li>
-              <li><i class="fa fa-caret-right"></i>dolorum esse tempora id architecto</li>
-              <li><i class="fa fa-caret-right"></i>optio repellendus quasi nisi vitae</li>
-            </ul>
-            <a href="#" class="btn btn-style-one">Appoint</a>
+            <a href="#" class="btn btn-style-one">Daftar Dokter</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -112,28 +103,17 @@
             <div class="col-md-6">
               <div class="contents">
                 <div class="section-title">
-                  <h3>pulmonary</h3>
+                  <h3>Poli Spesialis Anak</h3>
                 </div>
                 <div class="text">
-                  <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic
-                    is added.
-                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                  <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic
-                    is added.
-                    then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                  <p>Layanan pemeriksaan dan pengobatan terhadap bayi dan anak sakit oleh Dokter Spesialis Anak yang meliputi:</p>
+                  <ul>
+                    <li>Pemeriksaan Kesehatan Anak</li>
+                    <li>Pemeriksaan Tumbuh Kembang</li>
+                    <li>Imunisasi</li>
+                  </ul>
                 </div>
-                <ul class="content-list">
-                  <li>
-                    <i class="fa fa-check-circle-o"></i>Whitening is among the most popular dental
-                  </li>
-                  <li>
-                    <i class="fa fa-check-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                  </li>
-                  <li>
-                    <i class="fa fa-check-circle-o"></i>Teeth cleaning is part of oral hygiene and involves
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-style-one">Read more</a>
+                <a href="#" class="btn btn-style-one">Daftar Dokter</a>
               </div>
             </div>
           </div>
@@ -149,8 +129,6 @@
         <h3>Layanan
           <span>Penunjang</span>
         </h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. qui suscipit atque <br>
-          fugiat officia corporis rerum eaque neque totam animi, sapiente culpa. Architecto!</p>
       </div>
       <div class="row items-container clearfix">
         <div class="item">
