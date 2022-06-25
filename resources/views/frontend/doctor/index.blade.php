@@ -48,8 +48,14 @@
                   @if ($item->id == $itemDoctor->specialist_doctor_id)
                     <div class="col-md-4 col-sm-6">
                       <div class="team-person text-center">
-                        <img src="{{ asset('/storage/doctor/', $itemDoctor->image) }}" class="img-responsive"
-                          alt="team">
+                        @if ($item->image == null)
+                          {{-- images/doctor.svg --}}
+                          <img src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor"
+                            class="img-responsive">
+                        @else
+                          <img src="{{ Storage::url('public/doctor/') . $itemDoctor->image }}" alt="doctor"
+                            class="img-responsive">
+                        @endif
                         <h6>{{ $itemDoctor->name }}</h6>
                         <p>{{ $item->name }}</p>
                       </div>
@@ -60,7 +66,7 @@
               </div>
             @endforeach
             <!--End single tab content--
-                <!--End single tab content-->
+                  <!--End single tab content-->
           </div>
         </div>
       </div>

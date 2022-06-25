@@ -110,7 +110,7 @@
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/resource/1.png') }}" alt="">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Kebidanan & Kandungan.png') }}" width="10%" alt="Poli Kebidanan dan Kandungan">
                       </a>
                     </figure>
                   </div>
@@ -124,7 +124,7 @@ dengan kehamilan dan penyakit kandungan.</p>
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/resource/2.png') }}" alt="">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Spesialis Anak.png') }}" width="10%" alt="poli anak">
                       </a>
                     </figure>
                   </div>
@@ -139,7 +139,7 @@ dan Imunisasi.</p>
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/resource/3.png') }}" alt="">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Penyakit Dalam.png') }}" width="10%" alt="Poli Penyakit Dalam">
                       </a>
                     </figure>
                   </div>
@@ -154,7 +154,7 @@ sebagainya</p>
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/resource/4.png') }}" alt="">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Bedah.png') }}" width="10%" alt="Poli Bedah">
                       </a>
                     </figure>
                   </div>
@@ -202,7 +202,7 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
             <div class="tab-content">
               <div class="service-box tab-pane fade in active row" id="dormitory">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="images/services/service-one.jpg" alt="service-image">
+                  <img class="img-responsive" src="{{asset('asset/frontend/images/services/pills-pharmacy-wallpaper-preview.jpg')}}" alt="service-image">
                 </div>
                 <div class="col-md-6">
                   <div class="contents">
@@ -212,7 +212,7 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                     <div class="text">
                       <p>Instalasi farmasi rumah sakit merupakan suatu fasilitas rumah sakit yang menjadi tempat penyelenggaraan semua kegiatan untuk keperluan rumah sakit itu sendiri. Instalasi farmasi rumah sakit bertugas untuk menangani obat-obatan. Fasilitas dari sebuah instalasi farmasi rumah sakit adalah apotek, yang berfungsi untuk memudahkan pasien atau konsumen dalam mencari obat yang dibutuhkan.</p>
                     </div>
-                    <a href="#" class="btn btn-style-one">Read more</a>
+                    {{-- <a href="#" class="btn btn-style-one">Read more</a> --}}
                   </div>
                 </div>
               </div>
@@ -220,7 +220,7 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="orthopedic">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="images/services/service-two.jpg" alt="service-image">
+                  <img class="img-responsive" src="{{asset('asset/frontend/images/services/laboratory.jpg')}}" alt="service-image">
                 </div>
                 <div class="col-md-6">
                   <div class="contents">
@@ -230,7 +230,7 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                     <div class="text">
                       <p>Instalasi laboratorium merupakan salah satu instalasi yang ada di rumah sakit. Instalasi laboratorium merupakan bagian dari pelayanan penunjang yang memiliki tujuan membantu diagnosa suatu penyakit sehingga dokter dapat menangani suatu penyakit dengan baik, tepat, cepat dan akurat. Selain itu, instalasi laboratorium juga bertujuan untuk menentukan resiko terhadap suatu penyakit dengan harapan suatu penyakit dapat terdeteksi secara dini</p>
                     </div>
-                    <a href="#" class="btn btn-style-one">Read more</a>
+                    {{-- <a href="#" class="btn btn-style-one">Read more</a> --}}
                   </div>
                 </div>
               </div>
@@ -238,7 +238,7 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="sonogram">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="images/services/service-three.jpg" alt="service-image">
+                  <img class="img-responsive" src="{{asset('asset/frontend/images/services/rontgent.jpg')}}" alt="service-image">
                 </div>
                 <div class="col-md-6">
                   <div class="contents">
@@ -248,7 +248,7 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                     <div class="text">
                       <p>Rontgen merupakan prosedur pemeriksaan yang dilakukan untuk melihat kondisi dari tulang, persendian hingga organ-organ yang terdapat di dalam tubuh. Terdapat beberapa kondisi dan penyakit yang dapat di deteksi dengan melakukan rontgen, diantaranya adalah patah tulang, osteoporosis, infeksi, gangguan pencernaan, pembengkakkan jantung serta tumor. Dalam beberapa kasus diperlukan tambahan obat kontras yang perlu diminum atau disuntikkan untuk memperjelas dan memperlihatkan gambaran detail fungsi dari organ yang berada di bagian dalam.</p>
                     </div>
-                    <a href="#" class="btn btn-style-one">Read more</a>
+                    {{-- <a href="#" class="btn btn-style-one">Read more</a> --}}
                   </div>
                 </div>
               </div>
@@ -256,7 +256,7 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="x-ray">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="images/services/service-four.jpg" alt="service-image">
+                  <img class="img-responsive" src="{{asset('asset/frontend/images/services/ruang-operasi.jpeg')}}" alt="service-image">
                 </div>
                 <div class="col-md-6">
                   <div class="contents">
@@ -266,7 +266,7 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                     <div class="text">
                       <p>Ruang operasi merupakan suatu unit khusus pada rumah sakit yang berfungsi sebagai daerah pelayanan kritis yang mengutamakan aspek hirarki zonasi sterilitas. Ruang operasi digunakan untuk melakukan tindakan operasi dan atau pembedahan.</p>
                     </div>
-                    <a href="#" class="btn btn-style-one">Read more</a>
+                    {{-- <a href="#" class="btn btn-style-one">Read more</a> --}}
                   </div>
                 </div>
               </div>
@@ -274,7 +274,7 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="diagnostic">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="images/services/service-five.jpg" alt="service-image">
+                  <img class="img-responsive" src="{{asset('asset/frontend/images/services/persalinan.jpg')}}" alt="service-image">
                 </div>
                 <div class="col-md-6">
                   <div class="contents">
@@ -284,7 +284,7 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                     <div class="text">
                       <p>Ruangan persalinan merupakan unit pelayanan pada rumah sakit yang berfungsi untuk membantu proses kelahiran bayi.</p>
                     </div>
-                    <a href="#" class="btn btn-style-one">Read more</a>
+                    {{-- <a href="#" class="btn btn-style-one">Read more</a> --}}
                   </div>
                 </div>
               </div>
@@ -332,13 +332,13 @@ atau penyebab lainnya.</p>
         <div class="item">
           <div class="inner-box">
             <div class="img_holder">
-              <a href="service.html">
+              <a href="">
                 <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
-              <a href="service.html">
+              <a href="">
                 <h6>ICU</h6>
               </a>
               <p>adalah ruang khusus untuk pasien krisis yang memerlukan perawatan intensif dan observasi
@@ -351,13 +351,13 @@ Instalasi Rawat Intensif RSIA KArunia Bunda terdiri dari ICU, HCU, & PERINA.</p>
         <div class="item">
           <div class="inner-box">
             <div class="img_holder">
-              <a href="service.html">
+              <a href="">
                 <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
-              <a href="service.html">
+              <a href="">
                 <h6>Laboratorium</h6>
               </a>
               <p>Pelayanan pemeriksaan spesimen klinik di bidang hematologi, kimia klinik, mikrobiologi klinik,
@@ -368,13 +368,13 @@ parasitologi klinik, dan imunologi klinik.</p>
         <div class="item">
           <div class="inner-box">
             <div class="img_holder">
-              <a href="service.html">
+              <a href="">
                 <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
               <span>Better Service At Low Cost</span>
-              <a href="service.html">
+              <a href="">
                 <h6>Radiologi</h6>
               </a>
               <p>Radiologi adalah bagian dari ilmu kedokteran yang mempelajari tentang teknologi pencitraan, baik
@@ -386,7 +386,7 @@ manusia untuk mendeteksi suatu penyakit.</p>
         <div class="item">
           <div class="inner-box">
             <div class="img_holder">
-              <a href="service.html">
+              <a href="">
                 <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
               </a>
             </div>
