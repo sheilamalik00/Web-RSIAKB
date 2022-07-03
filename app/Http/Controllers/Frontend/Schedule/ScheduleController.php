@@ -21,4 +21,8 @@ class ScheduleController extends Controller
         // return view('frontend.schedule.index', compact('dokter'));
         // return view('frontend.schedule.index');
     }
+    public function registerShecdule(Request $request)
+    {
+        
+    }
 }

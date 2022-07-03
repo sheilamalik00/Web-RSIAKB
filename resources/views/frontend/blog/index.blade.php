@@ -23,9 +23,9 @@
       <div class="row">
         <div class="col-md-9 col-sm-12 col-xs-12">
           <div class="left-side">
-              @foreach ($blog as $item)
-                  
-              <div class="item-holder">
+              @foreach ($blogList as $item)
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-holder">
                 <div class="image-box">
                   <figure>
                     <a href="{{route('blog.show',$item->slug)}}">
@@ -37,13 +37,15 @@
                   <a href="{{route('blog.show',$item->slug)}}">
                     <h6>{{$item->title}}</h6>
                   </a>
-                  <span>By Admin / {{$item->created_at}}</span>
+                  <span>By Admin / {{$item->get_date_created()}}</span>
                   <p>{{$item->short_description}}</p>
                   <div class="link-btn">
                     <a href="{{route('blog.show',$item->slug)}}" class="btn-style-one">read more</a>
                   </div>
                 </div>
               </div>
+              </div>
+
               @endforeach
           </div>
         </div>
@@ -62,17 +64,15 @@
                 <h6>Categories</h6>
               </div>
               <ul class="categorise-list">
-                <li><a href="#">Alumni <span>(20)</span></a></li>
-                <li><a href="#">Psycology <span>(4)</span></a></li>
-                <li><a href="#">Sonogram <span>(2)</span></a></li>
-                <li><a href="#">x-ray <span>(9)</span></a></li>
-                <li><a href="#">Dental <span>(2)</span></a></li>
+                @foreach ($category as $item)
+                <li><a href="#">{{$item->name}} <span>({{$item->get_blog->count()}})</span></a></li>
+                @endforeach
               </ul>
             </div>
             <div class="tag-list">
-              <div class="text-title">
+              {{-- <div class="text-title">
                 <h6>Tags</h6>
-              </div>
+              </div> --}}
               {{-- <a href="#">ray</a><a href="#">dental</a>
               <a href="#">Clean</a><a href="#">hospitality</a>
               <a href="#">Dormamu</a><a href="#">Medical</a><a href="#">hospitality</a> --}}
@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="styled-pagination">
-          {{$blog->links('frontend.tools.paginate')}}
+          {{$blogList->links('frontend.tools.paginate')}}
         {{-- <ul>
           <li><a class="prev" href="#"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
           <li><a href="#" class="active">1</a></li>

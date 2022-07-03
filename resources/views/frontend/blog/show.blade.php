@@ -3,15 +3,16 @@
 @section('content')
 
 <!--Page Title-->
-<section class="page-title text-center" style="background-image:url(images/background/3.jpg);">
+<section class="page-title text-center" style="background-image:url({{asset('asset/frontend/images/background/3.jpg')}});">
     <div class="container">
         <div class="title-text">
-            <h1>Blog Details</h1>
+            <h1>{{$blogDetail->title}}</h1>
             <ul class="title-menu clearfix">
                 <li>
-                    <a href="index.html">home &nbsp;/</a>
+                    <a href="{{route('home.index')}}">home &nbsp;/</a>
+                    <a href="{{route('blog.index')}}">Blog &nbsp;/</a>
                 </li>
-                <li>Blog Details</li>
+                <li>{{$blogDetail->title}}</li>
             </ul>
         </div>
     </div>
@@ -31,9 +32,9 @@
                             </figure>
                         </div>
                         <div class="content-text">
-                            <a href="single-blog.html"><h5>{{$blog->title}}</h5></a>
-                            <span>By Donult Trump / {{$blog->created_at}}</span>
-                            <p>{!! $blog->content !!}</p>
+                            {{-- <a href="#"><h5></h5></a> --}}
+                            <span>By Donult Trump / {{$blogDetail->get_date_created()}}</span>
+                            <p>{!! $blogDetail->content !!}</p>
                         </div>
                     </div>
                 </div>
