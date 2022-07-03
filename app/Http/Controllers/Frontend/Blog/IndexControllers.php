@@ -11,14 +11,19 @@ class IndexControllers extends Controller
 {
     public function index()
     {
-        $blog = Blog::paginate(5);
-        return view('frontend.blog.index',compact('blog'));
+        $blog = Blog::latest()->limit(2)->get();
+        $blogList = Blog::latest()->paginate(15);
+        $category = CategoryBlog::with('get_blog')->get();
+        return view('frontend.blog.index', compact('blog','blogList','category'));
+        // return view('frontend.blog.index',compact('blog','blogList'));
     }
     public function show($id)
     {
-        $blog = Blog::where('slug',$id)->first();
+        $blog = Blog::latest()->limit(2)->get();
+        $blogDetail = Blog::where('slug',$id)->first();
         $category = CategoryBlog::all();
-        return view('frontend.blog.show',compact('blog','category'));
+        return view('frontend.blog.show',compact('blog','blogDetail','category'));
+
         // return view('frontend.blog.show',compact('blog'));
         // return view('frontend.blog.show');
     }

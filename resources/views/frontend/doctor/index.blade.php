@@ -48,12 +48,12 @@
                   @if ($item->id == $itemDoctor->specialist_doctor_id)
                     <div class="col-md-4 col-sm-6">
                       <div class="team-person text-center">
-                        @if ($item->image == null)
+                        @if ($itemDoctor->image == null)
                           {{-- images/doctor.svg --}}
-                          <img src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor"
+                          <img style="max-height: 275px; max-width:100%"  src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor"
                             class="img-responsive">
                         @else
-                          <img src="{{ Storage::url('public/doctor/') . $itemDoctor->image }}" alt="doctor"
+                          <img style="max-height: 275px; max-width:100%"  src="{{ Storage::url('public/doctor/') . $itemDoctor->image }}" alt="doctor"
                             class="img-responsive">
                         @endif
                         <h6>{{ $itemDoctor->name }}</h6>

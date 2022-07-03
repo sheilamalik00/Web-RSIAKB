@@ -14,8 +14,18 @@ class CreatePatientRegistersTable extends Migration
     public function up()
     {
         Schema::create('patient_registers', function (Blueprint $table) {
-            $table->id();
+            $table->string('uuid')->primary();
+            $table->string('name');
+            $table->string('phone')->nullable();
+            $table->string('email');
+            $table->string('nik');
+            $table->integer('no');
+            $table->date('birth');
+            $table->string('doctor_id');
+            $table->string('doctor_name');
+            $table->date('treatment date');
             $table->timestamps();
+
         });
     }
 

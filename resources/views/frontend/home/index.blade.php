@@ -2,8 +2,8 @@
 
 @section('content')
   <!--=================================
-        =            Page Slider            =
-        ==================================-->
+          =            Page Slider            =
+          ==================================-->
   <div class="hero-slider">
     <!-- Slider Item -->
     <div class="slider-item slide1" style="background-image:url({{ asset('asset/frontend/images/fotoslider.png') }})">
@@ -21,8 +21,7 @@
       </div>
     </div>
     <!-- Slider Item -->
-    <div class="slider-item"
-      style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-2.jpg') }});">
+    <div class="slider-item" style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-2.jpg') }});">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -36,8 +35,7 @@
       </div>
     </div>
     <!-- Slider Item -->
-    <div class="slider-item"
-      style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-3.jpg') }})">
+    <div class="slider-item" style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-3.jpg') }})">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -110,13 +108,14 @@
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/icons/Poli Kebidanan & Kandungan.png') }}" width="10%" alt="Poli Kebidanan dan Kandungan">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Kebidanan & Kandungan.png') }}"
+                          width="10%" alt="Poli Kebidanan dan Kandungan">
                       </a>
                     </figure>
                   </div>
                   <h6>Poli Kebidanan dan Kandungan</h6>
                   <p>Poliklinik yang bertujuan untuk membantu pasien dengan kasus yang berhubungan
-dengan kehamilan dan penyakit kandungan.</p>
+                    dengan kehamilan dan penyakit kandungan.</p>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -124,14 +123,15 @@ dengan kehamilan dan penyakit kandungan.</p>
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/icons/Poli Spesialis Anak.png') }}" width="10%" alt="poli anak">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Spesialis Anak.png') }}" width="10%"
+                          alt="poli anak">
                       </a>
                     </figure>
                   </div>
                   <h6>Poli Spesialis Anak</h6>
                   <p>Layanan pemeriksaan dan pengobatan terhadap bayi dan anak sakit oleh Dokter
-Spesialis Anak yang meliputi: Pemeriksaan Kesehatan Anak, Pemeriksaan Tumbuh Kembang,
-dan Imunisasi.</p>
+                    Spesialis Anak yang meliputi: Pemeriksaan Kesehatan Anak, Pemeriksaan Tumbuh Kembang,
+                    dan Imunisasi.</p>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -139,14 +139,16 @@ dan Imunisasi.</p>
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/icons/Poli Penyakit Dalam.png') }}" width="10%" alt="Poli Penyakit Dalam">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Penyakit Dalam.png') }}" width="10%"
+                          alt="Poli Penyakit Dalam">
                       </a>
                     </figure>
                   </div>
                   <h6>Poli Penyakit Dalam</h6>
                   <p>Unit layanan yang menangani konsultasi dan penanganan masalah kesehatan organ dalam
-tanpa bedah seperti diabetes, hipertensi, ginjal, saluran cerna, infeksi, alergi, imunologi, geriatri, dan
-sebagainya</p>
+                    tanpa bedah seperti diabetes, hipertensi, ginjal, saluran cerna, infeksi, alergi, imunologi, geriatri,
+                    dan
+                    sebagainya</p>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -154,14 +156,16 @@ sebagainya</p>
                   <div class="icon-box">
                     <figure>
                       <a href="#">
-                        <img src="{{ asset('asset/frontend/images/icons/Poli Bedah.png') }}" width="10%" alt="Poli Bedah">
+                        <img src="{{ asset('asset/frontend/images/icons/Poli Bedah.png') }}" width="10%"
+                          alt="Poli Bedah">
                       </a>
                     </figure>
                   </div>
                   <h6>Poli Bedah</h6>
                   <p>Unit pelayanan yang diberikan kepada pasien yang membutuhkan pelayanan kesehatan
-melalui proses pembedahan umum, seperti pasien pasca kecelakaan, operasi Kecil, perawatan luka biasa/luka oleh karena DM, perawatan luka pasca operasi Hernia, Usus Buntu, Haemoroid (Wasir),
-dan lain – lain serta konsultasi seputar proses pembedahan.</p>
+                    melalui proses pembedahan umum, seperti pasien pasca kecelakaan, operasi Kecil, perawatan luka
+                    biasa/luka oleh karena DM, perawatan luka pasca operasi Hernia, Usus Buntu, Haemoroid (Wasir),
+                    dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                 </div>
               </div>
             </div>
@@ -202,7 +206,9 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
             <div class="tab-content">
               <div class="service-box tab-pane fade in active row" id="dormitory">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="{{asset('asset/frontend/images/services/pills-pharmacy-wallpaper-preview.jpg')}}" alt="service-image">
+                  <img class="img-responsive"
+                    src="{{ asset('asset/frontend/images/services/pills-pharmacy-wallpaper-preview.jpg') }}"
+                    alt="service-image">
                 </div>
                 <div class="col-md-6">
                   <div class="contents">
@@ -210,7 +216,11 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                       <h3>Farmasi</h3>
                     </div>
                     <div class="text">
-                      <p>Instalasi farmasi rumah sakit merupakan suatu fasilitas rumah sakit yang menjadi tempat penyelenggaraan semua kegiatan untuk keperluan rumah sakit itu sendiri. Instalasi farmasi rumah sakit bertugas untuk menangani obat-obatan. Fasilitas dari sebuah instalasi farmasi rumah sakit adalah apotek, yang berfungsi untuk memudahkan pasien atau konsumen dalam mencari obat yang dibutuhkan.</p>
+                      <p>Instalasi farmasi rumah sakit merupakan suatu fasilitas rumah sakit yang menjadi tempat
+                        penyelenggaraan semua kegiatan untuk keperluan rumah sakit itu sendiri. Instalasi farmasi rumah
+                        sakit bertugas untuk menangani obat-obatan. Fasilitas dari sebuah instalasi farmasi rumah sakit
+                        adalah apotek, yang berfungsi untuk memudahkan pasien atau konsumen dalam mencari obat yang
+                        dibutuhkan.</p>
                     </div>
                     {{-- <a href="#" class="btn btn-style-one">Read more</a> --}}
                   </div>
@@ -220,7 +230,8 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="orthopedic">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="{{asset('asset/frontend/images/services/laboratory.jpg')}}" alt="service-image">
+                  <img class="img-responsive" src="{{ asset('asset/frontend/images/services/laboratory.jpg') }}"
+                    alt="service-image">
                 </div>
                 <div class="col-md-6">
                   <div class="contents">
@@ -228,7 +239,11 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                       <h3>Laboratorium</h3>
                     </div>
                     <div class="text">
-                      <p>Instalasi laboratorium merupakan salah satu instalasi yang ada di rumah sakit. Instalasi laboratorium merupakan bagian dari pelayanan penunjang yang memiliki tujuan membantu diagnosa suatu penyakit sehingga dokter dapat menangani suatu penyakit dengan baik, tepat, cepat dan akurat. Selain itu, instalasi laboratorium juga bertujuan untuk menentukan resiko terhadap suatu penyakit dengan harapan suatu penyakit dapat terdeteksi secara dini</p>
+                      <p>Instalasi laboratorium merupakan salah satu instalasi yang ada di rumah sakit. Instalasi
+                        laboratorium merupakan bagian dari pelayanan penunjang yang memiliki tujuan membantu diagnosa
+                        suatu penyakit sehingga dokter dapat menangani suatu penyakit dengan baik, tepat, cepat dan
+                        akurat. Selain itu, instalasi laboratorium juga bertujuan untuk menentukan resiko terhadap suatu
+                        penyakit dengan harapan suatu penyakit dapat terdeteksi secara dini</p>
                     </div>
                     {{-- <a href="#" class="btn btn-style-one">Read more</a> --}}
                   </div>
@@ -238,7 +253,8 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="sonogram">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="{{asset('asset/frontend/images/services/rontgent.jpg')}}" alt="service-image">
+                  <img class="img-responsive" src="{{ asset('asset/frontend/images/services/rontgent.jpg') }}"
+                    alt="service-image">
                 </div>
                 <div class="col-md-6">
                   <div class="contents">
@@ -246,7 +262,12 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                       <h3>Rontgen</h3>
                     </div>
                     <div class="text">
-                      <p>Rontgen merupakan prosedur pemeriksaan yang dilakukan untuk melihat kondisi dari tulang, persendian hingga organ-organ yang terdapat di dalam tubuh. Terdapat beberapa kondisi dan penyakit yang dapat di deteksi dengan melakukan rontgen, diantaranya adalah patah tulang, osteoporosis, infeksi, gangguan pencernaan, pembengkakkan jantung serta tumor. Dalam beberapa kasus diperlukan tambahan obat kontras yang perlu diminum atau disuntikkan untuk memperjelas dan memperlihatkan gambaran detail fungsi dari organ yang berada di bagian dalam.</p>
+                      <p>Rontgen merupakan prosedur pemeriksaan yang dilakukan untuk melihat kondisi dari tulang,
+                        persendian hingga organ-organ yang terdapat di dalam tubuh. Terdapat beberapa kondisi dan penyakit
+                        yang dapat di deteksi dengan melakukan rontgen, diantaranya adalah patah tulang, osteoporosis,
+                        infeksi, gangguan pencernaan, pembengkakkan jantung serta tumor. Dalam beberapa kasus diperlukan
+                        tambahan obat kontras yang perlu diminum atau disuntikkan untuk memperjelas dan memperlihatkan
+                        gambaran detail fungsi dari organ yang berada di bagian dalam.</p>
                     </div>
                     {{-- <a href="#" class="btn btn-style-one">Read more</a> --}}
                   </div>
@@ -256,7 +277,8 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="x-ray">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="{{asset('asset/frontend/images/services/ruang-operasi.jpeg')}}" alt="service-image">
+                  <img class="img-responsive" src="{{ asset('asset/frontend/images/services/ruang-operasi.jpeg') }}"
+                    alt="service-image">
                 </div>
                 <div class="col-md-6">
                   <div class="contents">
@@ -264,7 +286,9 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                       <h3>Ruang Operasi</h3>
                     </div>
                     <div class="text">
-                      <p>Ruang operasi merupakan suatu unit khusus pada rumah sakit yang berfungsi sebagai daerah pelayanan kritis yang mengutamakan aspek hirarki zonasi sterilitas. Ruang operasi digunakan untuk melakukan tindakan operasi dan atau pembedahan.</p>
+                      <p>Ruang operasi merupakan suatu unit khusus pada rumah sakit yang berfungsi sebagai daerah
+                        pelayanan kritis yang mengutamakan aspek hirarki zonasi sterilitas. Ruang operasi digunakan untuk
+                        melakukan tindakan operasi dan atau pembedahan.</p>
                     </div>
                     {{-- <a href="#" class="btn btn-style-one">Read more</a> --}}
                   </div>
@@ -274,7 +298,8 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="diagnostic">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="{{asset('asset/frontend/images/services/persalinan.jpg')}}" alt="service-image">
+                  <img class="img-responsive" src="{{ asset('asset/frontend/images/services/persalinan.jpg') }}"
+                    alt="service-image">
                 </div>
                 <div class="col-md-6">
                   <div class="contents">
@@ -282,7 +307,8 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                       <h3>Ruang Persalinan</h3>
                     </div>
                     <div class="text">
-                      <p>Ruangan persalinan merupakan unit pelayanan pada rumah sakit yang berfungsi untuk membantu proses kelahiran bayi.</p>
+                      <p>Ruangan persalinan merupakan unit pelayanan pada rumah sakit yang berfungsi untuk membantu proses
+                        kelahiran bayi.</p>
                     </div>
                     {{-- <a href="#" class="btn btn-style-one">Read more</a> --}}
                   </div>
@@ -323,9 +349,9 @@ dan lain – lain serta konsultasi seputar proses pembedahan.</p>
                 <h6>UGD</h6>
               </a>
               <p>adalah unit pelayanan yang memberikan pelayanan pertama pada pasien dengan ancaman kematian
-dan atau resiko kecacatan secara terpadu yang memilki potensi untuk mengalami kondisi
-kegawat darutatan, baik karena penyakit, kecelakaan, keracunan, diserang binatang buas,
-atau penyebab lainnya.</p>
+                dan atau resiko kecacatan secara terpadu yang memilki potensi untuk mengalami kondisi
+                kegawat darutatan, baik karena penyakit, kecelakaan, keracunan, diserang binatang buas,
+                atau penyebab lainnya.</p>
             </div>
           </div>
         </div>
@@ -342,9 +368,9 @@ atau penyebab lainnya.</p>
                 <h6>ICU</h6>
               </a>
               <p>adalah ruang khusus untuk pasien krisis yang memerlukan perawatan intensif dan observasi
-berkelanjutan, dilengkapi dengan berbagai peralatan modern untuk mendukung monitoring pasien
-seperti pasien monitor, ventilator, DC Shock (defibrillator), incubator, infant warmer, dan C-Pap.
-Instalasi Rawat Intensif RSIA KArunia Bunda terdiri dari ICU, HCU, & PERINA.</p>
+                berkelanjutan, dilengkapi dengan berbagai peralatan modern untuk mendukung monitoring pasien
+                seperti pasien monitor, ventilator, DC Shock (defibrillator), incubator, infant warmer, dan C-Pap.
+                Instalasi Rawat Intensif RSIA KArunia Bunda terdiri dari ICU, HCU, & PERINA.</p>
             </div>
           </div>
         </div>
@@ -361,7 +387,7 @@ Instalasi Rawat Intensif RSIA KArunia Bunda terdiri dari ICU, HCU, & PERINA.</p>
                 <h6>Laboratorium</h6>
               </a>
               <p>Pelayanan pemeriksaan spesimen klinik di bidang hematologi, kimia klinik, mikrobiologi klinik,
-parasitologi klinik, dan imunologi klinik.</p>
+                parasitologi klinik, dan imunologi klinik.</p>
             </div>
           </div>
         </div>
@@ -378,8 +404,8 @@ parasitologi klinik, dan imunologi klinik.</p>
                 <h6>Radiologi</h6>
               </a>
               <p>Radiologi adalah bagian dari ilmu kedokteran yang mempelajari tentang teknologi pencitraan, baik
-gelombang elektromagnetik maupun gelombang mekanik guna memindai bagian dalam tubuh
-manusia untuk mendeteksi suatu penyakit.</p>
+                gelombang elektromagnetik maupun gelombang mekanik guna memindai bagian dalam tubuh
+                manusia untuk mendeteksi suatu penyakit.</p>
             </div>
           </div>
         </div>
@@ -396,8 +422,8 @@ manusia untuk mendeteksi suatu penyakit.</p>
                 <h6>Farmasi</h6>
               </a>
               <p>Pelayanan obat atas resep dokter
-Pelayanan Informasi Obat (PIO)
-Pelayanan Farmasi Klinik</p>
+                Pelayanan Informasi Obat (PIO)
+                Pelayanan Farmasi Klinik</p>
             </div>
           </div>
         </div>
@@ -414,8 +440,8 @@ Pelayanan Farmasi Klinik</p>
                 <h6>Instalasi Gizi</h6>
               </a>
               <p>Merupakan salah satu Instalasi Pelayanan Penunjang Medis yang memberikan pelayanan gizi
-di rumah sakit untuk memenuhi kebutuhan gizi baik pasien Rawat Inap maupun Rawat Jalan
-serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehatan.</p>
+                di rumah sakit untuk memenuhi kebutuhan gizi baik pasien Rawat Inap maupun Rawat Jalan
+                serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehatan.</p>
             </div>
           </div>
         </div>
@@ -439,11 +465,12 @@ serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehata
         @foreach ($doctor as $item)
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="team-member">
-              @if ($item->image == null)
+              @if ($item->image1 == null)
                 {{-- images/doctor.svg --}}
-                <img src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor" class="img-responsive">
+                <img style="max-height: 275px; max-width:100%" src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor" class="img-responsive">
               @else
-                <img src="{{ Storage::url('public/doctor/') . $item->image }}" alt="doctor" class="img-responsive">
+                <img style="max-height: 275px; max-width:100%" src="{{ Storage::url('public/doctor/') . $item->image }}" alt="doctor"
+                  class="img-responsive">
               @endif
               <div class="contents text-center">
                 <h4>{{ $item->name }}</h4>
@@ -611,7 +638,8 @@ serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehata
                       </a>
                     </h4>
                   </div>
-                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                    aria-labelledby="headingOne">
                     <div class="panel-body">
                       Ya, RSIA Karunia Bunda menerima pasien umum, pasien BPJS dan pasien peserta
                       asuransi yag telah bekerja sama
@@ -651,7 +679,8 @@ serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehata
                       </a>
                     </h4>
                   </div>
-                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                    aria-labelledby="headingThree">
                     <div class="panel-body">
                       • Pasien yang sudah mendapatkan rujukan, selanjutnya melakukan pendaftaran di
                       resepsionis dengan membawa kelengkapan berkas yang sudah ditentukan
@@ -704,7 +733,8 @@ serta konsultasi terkait problem gizi, metabolism tubuh dan peningkatan kesehata
                   </div>
 
                   <div class="form-group">
-                    <input type="text" name="tgl_lahir" placeholder="Tanggal Lahir" required="" id="datepicker">
+                    <input type="text" name="tgl_lahir" placeholder="Tanggal Lahir" required=""
+                      id="datepicker">
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                   </div>
                   <div class="form-group">
