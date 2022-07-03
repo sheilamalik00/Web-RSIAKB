@@ -465,11 +465,11 @@
         @foreach ($doctor as $item)
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="team-member">
-              @if ($item->image == null)
+              @if ($item->image1 == null)
                 {{-- images/doctor.svg --}}
-                <img src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor" class="img-responsive">
+                <img style="max-height: 275px; max-width:100%" src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor" class="img-responsive">
               @else
-                <img src="{{ Storage::url('public/doctor/') . $item->image }}" alt="doctor"
+                <img style="max-height: 275px; max-width:100%" src="{{ Storage::url('public/doctor/') . $item->image }}" alt="doctor"
                   class="img-responsive">
               @endif
               <div class="contents text-center">
