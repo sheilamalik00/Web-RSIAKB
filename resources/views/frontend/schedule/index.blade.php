@@ -29,7 +29,8 @@
                 <span>Janji Temu</span>
               </h3>
             </div>
-            <form name="contact_form" class="default-form contact-form" action="{{ route('kirim-jadwal') }}" method="get">
+            <form name="contact_form" class="default-form contact-form" action="{{route('appointment.store')}}" method="POST">
+                @csrf
               <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                   <div class="form-group">

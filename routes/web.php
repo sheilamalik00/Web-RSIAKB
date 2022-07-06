@@ -53,5 +53,7 @@ Route::get('/appointment', [App\Http\Controllers\Frontend\Schedule\ScheduleContr
 
 Route::get('/service', [App\Http\Controllers\Frontend\Service\IndexControllers::class, 'index'])->name('service.index');
 
+Route::post('/appointment', [App\Http\Controllers\Frontend\Schedule\ScheduleController::class, 'registerShecdule'])->name('appointment.store');
+
 //kirim Jadwal
 Route::get('/kirim-jadwal',[App\Http\Controllers\Frontend\Doctor\IndexControllers::class, 'kirimJadwal'])->name('kirim-jadwal');
