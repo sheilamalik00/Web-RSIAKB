@@ -29,7 +29,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [App\Http\Controllers\Backend\Dashboard\DashboardController::class, 'index'])->name('dashboard');
     Route::resource('category', App\Http\Controllers\Backend\Blog\CategoryBlogControllers::class);
     Route::resource('blog', App\Http\Controllers\Backend\Blog\BlogControllers::class);
-
+    Route::get('/patient-register', [App\Http\Controllers\Backend\Patient\PatientRegisterControllers::class, 'index'])->name('patient-register.index');
     //spesialist
     Route::resource('spesialist', App\Http\Controllers\Backend\Doctor\SpecialistDoctorControllers::class);
     Route::resource('doctor', App\Http\Controllers\Backend\Doctor\DoctorControllers::class);
