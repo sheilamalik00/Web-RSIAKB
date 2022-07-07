@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Create Schedule</h1>
+            <h1>Update Schedule</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -27,30 +27,41 @@
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Add Data</h3>
+                <h3 class="card-title">Update Data</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="{{ route('admin.category.store') }}" method="POST" enctype="multipart/form-data">
+              <form action="{{ route('admin.schedule.update',$schedule->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
+                @method('PUT')
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
-                    <input name="name" type="text" class="form-control" id="exampleInputEmail1"
-                      placeholder="Masukan Nama Kategori">
+                    <select name="doctor_id" class="form-control" id="exampleInputEmail1">
+                      <option value="">Pilih Doctor</option>
+                        @foreach ($doctor as $item)
+                            <option value="{{ $item->id }}" @if ($item->id == $schedule->doctor_id)
+                                selected
+
+                            @endif>{{ $item->name }} ({{$item->get_specialist_doctor->name}})</option>
+                        @endforeach
+                    </select>
                   </div>
                   {{-- form week --}}
                   <div class="form-group">
                     <label for="exampleInputEmail1">Week</label>
-                    <select name="week" class="form-control" id="exampleInputEmail1">
-                      <option value="">Pilih Hari</option>
-                      <option value="Senin">Senin</option>
-                      <option value="Selasa">Selasa</option>
-                      <option value="Rabu">Rabu</option>
-                      <option value="Kamis">Kamis</option>
-                      <option value="Jumat">Jumat</option>
-                      <option value="Sabtu">Sabtu</option>
-                      <option value="Minggu">Minggu</option>
+                    <select name="schedule_day" class="form-control" id="exampleInputEmail1">
+                        <option value="{{$schedule}}"
+                        <option value="">Choose Day</option>
+                      {{-- English Day --}}
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                        {{-- English Day --}}
                     </select>
                   </div>
                   {{-- form week --}}

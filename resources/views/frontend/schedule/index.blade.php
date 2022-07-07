@@ -100,7 +100,7 @@
     <div class="container">
       <div class="section-title text-center">
         <h3>Dokter Terbaik
-          <span>Kami</span>
+          {{-- <span>Kami</span> --}}
         </h3>
         {{-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum
           <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?
@@ -123,4 +123,53 @@
     </div>
   </section>
   <!--End team section-->
+@endsection
+
+@section('scriptJs')
+  <script>
+    //get api doctor from select specialist
+    $('#spesialis').change(function() {
+      var specialist = $(this).val();
+      var tgl_berobat = $('#tgl_berobat').val();
+      if (specialist != null && tgl_berobat != null) {
+        $.ajax({
+          url: "{{ url('/api/doctor') }}",
+          type: "GET",
+          data: {
+            specialist: specialist,
+            tgl_berobat: tgl_berobat
+          },
+          success: function(data) {
+            $('#doctor').empty();
+            $('#doctor').append('<option>Dokter</option>');
+            $.each(data, function(key, value) {
+              $('#doctor').append('<option value="' + value.id + '">' + value.name + '</option>');
+            });
+          }
+        });
+      }
+    });
+    $('#tgl_berobat').change(function() {
+      var specialist = $('#spesialis').val();
+      var tgl_berobat = $('#tgl_berobat').val();
+      console.log(tgl_berobat);
+      if (specialist != null && tgl_berobat != null) {
+        $.ajax({
+          url: "{{ url('/api/doctor') }}",
+          type: "GET",
+          data: {
+            specialist: specialist,
+            tgl_berobat: tgl_berobat
+          },
+          success: function(data) {
+            $('#doctor').empty();
+            $('#doctor').append('<option>Dokter</option>');
+            $.each(data, function(key, value) {
+              $('#doctor').append('<option value="' + value.id + '">' + value.name + '</option>');
+            });
+          }
+        });
+      }
+    });
+  </script>
 @endsection

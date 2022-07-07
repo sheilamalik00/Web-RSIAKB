@@ -467,9 +467,9 @@
             <div class="team-member">
               @if ($item->image == null)
                 {{-- images/doctor.svg --}}
-                <img style="max-height: 275px; max-width:100%" src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor" class="img-responsive">
+                <img src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor" class="img-responsive">
               @else
-                <img style="max-height: 275px; max-width:100%" src="{{ Storage::url('public/doctor/') . $item->image }}" alt="doctor"
+                <img src="{{ Storage::url('public/doctor/') . $item->image }}" alt="doctor"
                   class="img-responsive">
               @endif
               <div class="contents text-center">

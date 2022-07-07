@@ -20,10 +20,10 @@ class CreatePatientRegistersTable extends Migration
             $table->string('email');
             $table->string('nik');
             $table->integer('no');
-            $table->date('birth');
+            $table->string('birth');
             $table->string('doctor_id');
             $table->string('doctor_name');
-            $table->date('treatment date');
+            $table->date('treatment_date');
             $table->timestamps();
 
         });

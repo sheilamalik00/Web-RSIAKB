@@ -17,7 +17,7 @@ class ScheduleDoctorControllers extends Controller
      */
     public function index(Request $request)
     {
-        $kategori = ScheduleDoctor::with('get_doctor')->get();
+        // $kategori = ScheduleDoctor::with('get_doctor')->get();
         // dd($kategori);
         if ($request->ajax()) {
             $kategori = ScheduleDoctor::with('get_doctor')->get();
@@ -96,7 +96,7 @@ class ScheduleDoctorControllers extends Controller
      */
     public function edit($id)
     {
-        $schedule = ScheduleDoctor::find($id);
+        $schedule = ScheduleDoctor::where('id', $id)->first();
         $doctor = Doctor::all();
         return view('backend.schedule.edit', compact('schedule', 'doctor'));
     }
