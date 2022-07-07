@@ -465,11 +465,11 @@
         @foreach ($doctor as $item)
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="team-member">
-              @if ($item->image1 == null)
+              @if ($item->image == null)
                 {{-- images/doctor.svg --}}
-                <img style="max-height: 275px; max-width:100%" src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor" class="img-responsive">
+                <img src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor" class="img-responsive">
               @else
-                <img style="max-height: 275px; max-width:100%" src="{{ Storage::url('public/doctor/') . $item->image }}" alt="doctor"
+                <img src="{{ Storage::url('public/doctor/') . $item->image }}" alt="doctor"
                   class="img-responsive">
               @endif
               <div class="contents text-center">
@@ -703,8 +703,9 @@
                 <span>Janji Temu</span>
               </h3>
             </div>
-            <form name="contact_form" class="default-form contact-form" action="{{ route('kirim-jadwal') }}"
-              method="get">
+            <form name="contact_form" class="default-form contact-form" action="{{ route('appointment.store') }}"
+              method="post">
+              @csrf
               <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                   <div class="form-group">

@@ -94,6 +94,16 @@
               </p>
             </a>
           </li>
+          <li class="nav-header">Report</li>
+           <li class="nav-item">
+            <a href="{{route('admin.patient-register.index')}}" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Patient Register
+                {{-- <i class="fas fa-angle-left right"></i> --}}
+              </p>
+            </a>
+          </li>
           <li class="nav-header">Setting</li>
           <li class="nav-item">
             <a href="" class="nav-link">

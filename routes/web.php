@@ -29,7 +29,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [App\Http\Controllers\Backend\Dashboard\DashboardController::class, 'index'])->name('dashboard');
     Route::resource('category', App\Http\Controllers\Backend\Blog\CategoryBlogControllers::class);
     Route::resource('blog', App\Http\Controllers\Backend\Blog\BlogControllers::class);
-
+    Route::get('/patient-register', [App\Http\Controllers\Backend\Patient\PatientRegisterControllers::class, 'index'])->name('patient-register.index');
     //spesialist
     Route::resource('spesialist', App\Http\Controllers\Backend\Doctor\SpecialistDoctorControllers::class);
     Route::resource('doctor', App\Http\Controllers\Backend\Doctor\DoctorControllers::class);
@@ -52,6 +52,8 @@ Route::get('/gallery', [App\Http\Controllers\Frontend\Gallery\IndexControllers::
 Route::get('/appointment', [App\Http\Controllers\Frontend\Schedule\ScheduleController::class, 'index'])->name('appointment.index');
 
 Route::get('/service', [App\Http\Controllers\Frontend\Service\IndexControllers::class, 'index'])->name('service.index');
+
+Route::post('/appointment', [App\Http\Controllers\Frontend\Schedule\ScheduleController::class, 'registerShecdule'])->name('appointment.store');
 
 //kirim Jadwal
 Route::get('/kirim-jadwal',[App\Http\Controllers\Frontend\Doctor\IndexControllers::class, 'kirimJadwal'])->name('kirim-jadwal');

@@ -15,6 +15,7 @@ class ScheduleDoctor extends Model
         'practice_time',
     ];
 
+
     public function get_doctor()
     {
         return $this->belongsTo(Doctor::class,'doctor_id','id');

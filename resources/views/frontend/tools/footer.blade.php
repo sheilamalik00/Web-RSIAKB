@@ -57,10 +57,10 @@
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="social-links">
-            <h6>Recent Posts</h6>
+            <h6>Informasi Terkini</h6>
             <ul>
                 @foreach ($blog as $item)
-                    
+
                 <li class="item">
                   <div class="media">
                     <div class="media-left">
