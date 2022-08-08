@@ -4,7 +4,7 @@
     <a href="index3.html" class="brand-link">
       {{-- <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
         style="opacity: .8"> --}}
-      <span class="brand-text font-weight-light">Admin Rumah Sakit</span>
+      <span class="brand-text font-weight-light">Admin RSIA Karunia Bunda</span>
     </a>
 
     <!-- Sidebar -->
@@ -25,7 +25,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="{{route('admin.dashboard')}}" class="nav-link active">
+            <a href="{{ route('admin.dashboard') }}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -34,7 +34,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{route('admin.blog.index')}}" class="nav-link">
+            <a href="{{ route('admin.blog.index') }}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Artikel
@@ -53,13 +53,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{route('admin.category.index')}}" class="nav-link">
+                <a href="{{ route('admin.category.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Kategori Artikel</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{route('admin.spesialist.index')}}" class="nav-link">
+                <a href="{{ route('admin.spesialist.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Spesialis Dokter</p>
                   {{-- <span class="badge badge-info right">Comming Soon</span> --}}
@@ -68,7 +68,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="{{route('admin.doctor.index')}}" class="nav-link">
+            <a href="{{ route('admin.doctor.index') }}" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Dokter
@@ -77,7 +77,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{route('admin.gallery.index')}}" class="nav-link">
+            <a href="{{ route('admin.gallery.index') }}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Galleri
@@ -86,7 +86,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{route('admin.schedule.index')}}" class="nav-link">
+            <a href="{{ route('admin.schedule.index') }}" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Jadwal Prakter Dokter
@@ -95,8 +95,8 @@
             </a>
           </li>
           <li class="nav-header">Laporan</li>
-           <li class="nav-item">
-            <a href="{{route('admin.patient-register.index')}}" class="nav-link">
+          <li class="nav-item">
+            <a href="{{ route('admin.patient-register.index') }}" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Pendaftaran Pasien
@@ -115,12 +115,19 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a class="nav-link" href="{{ route('logout') }}"
+              onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
               <i class="nav-icon fas fa-columns"></i>
               <p>
                 Keluar
               </p>
             </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+              @csrf
+            </form>
+
           </li>
         </ul>
       </nav>
