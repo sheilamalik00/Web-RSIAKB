@@ -9,7 +9,7 @@
             <ul class="location-link">
               <li class="item">
                 <i class="fa fa-map-marker"></i>
-                <p>Jl. Aria Santika No.28, RT.003/RW.003, Margasari, Kec. Karawaci, Kota Tangerang, Banten 15114</p>
+                <p>Jl. Aria Santika No.28,  Margasari, Kec. Karawaci, Kota Tangerang, Banten 15113.</p>
               </li>
               <li class="item">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>

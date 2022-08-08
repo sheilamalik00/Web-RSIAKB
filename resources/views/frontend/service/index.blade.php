@@ -22,11 +22,8 @@
     <div class="container">
       <div class="section-title text-center">
         <h3>Pelayanan di RSIA Karunia Bunda
-          <span>Kami</span>
+          {{-- <span>Kami</span> --}}
         </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum
-          <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?
-        </p>
       </div>
       <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -71,39 +68,39 @@
             <p>1).Instalasi rawat jalan,<br />
               Termasuk di dalamnya Poli Kebidanan dan Kandungan , Poli Anak, Poli Penyakit
               Dalam, Polik Bedah dan Poli Gizi
-              <br />
+              <br /><br />
               2). Unit Gawat Darurat<br />
               Merupakan unit pelayanan 24 jam. Unit ini menggunakan sistem triage dengan
               membagi pasien menjadi 3 label; label hijau untuk pasien yang memerlukan
               penanganan dan perhatian dokter namun tidak darurat, label kuning untuk pasien
               stabil yang memerlukan perawatan rumah sakit serta pengawasan dan re-triage
               berkala oleh tenaga medis terlatih, dan label merah untuk pasien yang memerlukan
-              tindakan bedah segara atau tatalaksana lain untuk mempertahankan hidupnya.<br />
-              3). ICU<br />
-              4). HCU<br />
-              5). Ruang Isolasi<br />
-              6). Perina<br />
-              7). Kamar Operasi<br />
-              8). Ruang Bersalin<br />
-              9). Ruang Pemulihan Pasca Operasi / RR<br />
-              10). Laboratorium<br />
-              11). Instalasi Farmasi<br />
-              12). Unit Radiologi<br />
-              13). Dapur<br />
-              14). Ruang Tunggu<br />
+              tindakan bedah segara atau tatalaksana lain untuk mempertahankan hidupnya.<br /><br />
+              3). ICU<br /><br />
+              4). HCU<br /><br />
+              5). Ruang Isolasi<br /><br />
+              6). Perina<br /><br />
+              7). Kamar Operasi<br /><br />
+              8). Ruang Bersalin<br /><br />
+              9). Ruang Pemulihan Pasca Operasi / RR<br /><br />
+              10). Laboratorium<br /><br />
+              11). Instalasi Farmasi<br /><br />
+              12). Unit Radiologi<br /><br />
+              13). Dapur<br /><br />
+              14). Ruang Tunggu<br /><br />
               Tersedia ± 30 tempat duduk yang tersebar, 1 mesin Anjungan Pendaftaran Mandiri
               (APM), TV monitor info antrean pasien, jadwal dokter serta ketersediaan tempat tidur
-              dan info edukasi pasien.<br />
-              15). Ruang Pojok ASI<br />
-              16). Ruang sterilisasi<br />
-              17). Ruang Instalasi Pemeliharaan Sarana dan Prasarana RS / IPSRS<br />
-              18). Ruang Laundry<br />
-              19). Aula / Ruang Serba Guna<br />
-              20). Musholla<br />
-              21). Tempat Pengelolaan / TPS Limbah Medis<br />
-              22). Instalasi Pengolahan Air Limbah (IPAL)<br />
-              23). Ruang Pemulsaan Jenazah<br />
-              24). Ambulans<br />
+              dan info edukasi pasien.<br /><br />
+              15). Ruang Pojok ASI<br /><br />
+              16). Ruang sterilisasi<br /><br />
+              17). Ruang Instalasi Pemeliharaan Sarana dan Prasarana RS / IPSRS<br /><br />
+              18). Ruang Laundry<br /><br />
+              19). Aula / Ruang Serba Guna<br /><br />
+              20). Musholla<br /><br />
+              21). Tempat Pengelolaan / TPS Limbah Medis<br /><br />
+              22). Instalasi Pengolahan Air Limbah (IPAL)<br /><br />
+              23). Ruang Pemulsaan Jenazah<br /><br />
+              24). Ambulans<br /><br />
             </p>
             {{-- <ul>
               <li><i class="fa fa-caret-right"></i>vitae laboriosam explicabo eligendi sapiente</li>

@@ -65,7 +65,6 @@
                   <div class="form-group">
                     <input type="date" id="tgl_berobat" class="tgl_berobat" name="tgl_berobat"
                       placeholder="Tanggal Berobat" required="">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -86,7 +85,7 @@
         <div class="col-md-6 col-sm-12 col-xs-12">
           <div class="appointment-image-holder">
             <figure>
-              <img src="{{ asset('asset/frontend/images/background/appoinment.jpg') }}" alt="Appointment">
+              <img src="{{ asset('asset/frontend/tambahan/buatjanjitemu.jpg') }}" alt="Appointment">
             </figure>
           </div>
         </div>

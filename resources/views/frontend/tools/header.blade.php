@@ -30,7 +30,7 @@
         </li>
       </ul>
       <div class="link-btn">
-        <a href="#" class="btn-style-one">Buat Janji Temu</a>
+        <a href="{{route('appointment.index')}}" class="btn-style-one">Buat Janji Temu</a>
       </div>
     </div>
   </div>
