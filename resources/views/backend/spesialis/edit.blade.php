@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Edit Spesialist</h1>
+            <h1>Edit Spesialis</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -27,7 +27,7 @@
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Edit Spesialist</h3>
+                <h3 class="card-title">Edit Spesialis Dokter</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
@@ -36,7 +36,7 @@
                 @method('PUT')
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
+                    <label for="exampleInputEmail1">Nama</label>
                     <input name="name" type="text" class="form-control" id="exampleInputEmail1"
                     value="{{old('name',$spesialist->name)}}" placeholder="Enter name spesialist">
                   </div>

@@ -35,7 +35,7 @@
       </div>
     </div>
     <!-- Slider Item -->
-    <div class="slider-item" style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-3.jpg') }})">
+    {{-- <div class="slider-item" style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-3.jpg') }})">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -51,7 +51,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
   </div>
 
   <!--====  End of Page Slider  ====-->
@@ -230,7 +230,7 @@
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="orthopedic">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="{{ asset('asset/frontend/images/services/laboratory.jpg') }}"
+                  <img class="img-responsive" src="{{ asset('asset/frontend/tambahan/Laboratorium.jpeg') }}"
                     alt="service-image">
                 </div>
                 <div class="col-md-6">
@@ -253,7 +253,7 @@
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="sonogram">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="{{ asset('asset/frontend/images/services/rontgent.jpg') }}"
+                  <img class="img-responsive" src="{{ asset('asset/frontend/tambahan/layanan.jpg') }}"
                     alt="service-image">
                 </div>
                 <div class="col-md-6">
@@ -277,7 +277,7 @@
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="x-ray">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="{{ asset('asset/frontend/images/services/ruang-operasi.jpeg') }}"
+                  <img class="img-responsive" src="{{ asset('asset/frontend/tambahan/Ruang Operasi.jpeg') }}"
                     alt="service-image">
                 </div>
                 <div class="col-md-6">
@@ -298,7 +298,7 @@
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="diagnostic">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="{{ asset('asset/frontend/images/services/persalinan.jpg') }}"
+                  <img class="img-responsive" src="{{ asset('asset/frontend/tambahan/Ruang Bersalin.jpeg') }}"
                     alt="service-image">
                 </div>
                 <div class="col-md-6">
@@ -340,7 +340,7 @@
           <div class="inner-box">
             <div class="img_holder">
               <a href="service.html">
-                <img src="{{ asset('asset/frontend/images/gallery/1.jpg') }}" alt="images" class="img-responsive">
+                <img src="{{ asset('asset/frontend/tambahan/IGD2.jpeg') }}" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
@@ -359,11 +359,11 @@
           <div class="inner-box">
             <div class="img_holder">
               <a href="">
-                <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
+                <img src="{{asset('asset/frontend/tambahan/ICU.jpeg')}}" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
+
               <a href="">
                 <h6>ICU</h6>
               </a>
@@ -378,11 +378,11 @@
           <div class="inner-box">
             <div class="img_holder">
               <a href="">
-                <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
+                <img src="{{asset('asset/frontend/tambahan/Laboratorium1.jpg')}}" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
+
               <a href="">
                 <h6>Laboratorium</h6>
               </a>
@@ -395,11 +395,11 @@
           <div class="inner-box">
             <div class="img_holder">
               <a href="">
-                <img src="images/gallery/1.jpg" alt="images" class="img-responsive">
+                <img src="{{asset('asset/frontend/tambahan/radiologilagi.jpg')}}" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
+
               <a href="">
                 <h6>Radiologi</h6>
               </a>
@@ -413,11 +413,11 @@
           <div class="inner-box">
             <div class="img_holder">
               <a href="">
-                <img src="images/gallery/2.jpg" alt="images" class="img-responsive">
+                <img src="{{asset('asset/frontend/tambahan/farmasi1.jpeg')}}" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
+
               <a href="service.html">
                 <h6>Farmasi</h6>
               </a>
@@ -431,11 +431,11 @@
           <div class="inner-box">
             <div class="img_holder">
               <a href="service.html">
-                <img src="images/gallery/3.jpg" alt="images" class="img-responsive">
+                <img src="{{asset('asset/frontend/tambahan/layanan.jpg')}}" alt="images" class="img-responsive">
               </a>
             </div>
             <div class="image-content text-center">
-              <span>Better Service At Low Cost</span>
+
               <a href="service.html">
                 <h6>Instalasi Gizi</h6>
               </a>
@@ -457,9 +457,6 @@
         <h3>Dokter Spesialis
           <span>Kami</span>
         </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum
-          <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?
-        </p>
       </div>
       <div class="row">
         @foreach ($doctor as $item)
@@ -660,11 +657,11 @@
                       Peserta yang mendapat rujukan dari faskes 1 harus membawa kelengkapan berkas
                       berupa:
                       <ul>
-                        • Surat rujukan asli beserta fotocopy 2 lembar
-                        • Surat kontrol asli
-                        • Kartu BPJS asli dan fotocopy 2 lembar
-                        • KTP asli dan fotocopy 2 lembar
-                        • Fotocopy KK 2 lembar
+                        • Surat rujukan asli beserta fotocopy 2 lembar<br/>
+                        • Surat kontrol asli<br/>
+                        • Kartu BPJS asli dan fotocopy 2 lembar<br/>
+                        • KTP asli dan fotocopy 2 lembar<br/>
+                        • Fotocopy KK 2 lembar<br/>
                       </ul>
 
                     </div>

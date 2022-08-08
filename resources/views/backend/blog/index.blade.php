@@ -46,12 +46,12 @@
                   <thead>
                     <tr>
                       {{-- <th>No</th> --}}
-                      <th>Title</th>
+                      <th>Judul</th>
                       <th>Slug</th>
-                      <th>Short Decsripsi</th>
+                      <th>Deskripsi Singkat</th>
                       <th>Status</th>
                       {{-- <th>Status</th> --}}
-                      <th>Action</th>
+                      <th>Aksi</th>
                     </tr>
                   </thead>
                   {{-- <tbody>

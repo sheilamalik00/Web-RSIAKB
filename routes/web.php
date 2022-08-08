@@ -25,7 +25,7 @@ Auth::routes();
 // Route::view('/', 'frontend.home.index');
 
 
-Route::prefix('admin')->name('admin.')->group(function () {
+Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', [App\Http\Controllers\Backend\Dashboard\DashboardController::class, 'index'])->name('dashboard');
     Route::resource('category', App\Http\Controllers\Backend\Blog\CategoryBlogControllers::class);
     Route::resource('blog', App\Http\Controllers\Backend\Blog\BlogControllers::class);
