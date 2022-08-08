@@ -55,7 +55,7 @@
   </section>
 
   <!-- Promo Video -->
-  <section class="promo-video">
+  {{-- <section class="promo-video">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -71,7 +71,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
 
   <section class="gallery bg-gray">
     <div class="container">
@@ -81,9 +81,6 @@
             <h3>Kumpulan Foto
               <span>dari Rumah Sakit Kami</span>
             </h3>
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overv-
-              <br>iews. Iterative approaches to corporate strategy...
-            </p>
           </div>
         </div>
         @forelse ($gallery as $item)
