@@ -7,12 +7,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data Patient Register</h1>
+            <h1>Data Pasien Daftar</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Data Patient Register</li>
+              <li class="breadcrumb-item active">Data Pasien Daftar</li>
             </ol>
           </div>
         </div>
@@ -32,7 +32,7 @@
             </div>
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Data Patient</h3>
+                <h3 class="card-title">Data Pasien</h3>
                 {{-- <br/> --}}
                 {{-- <a href="{{route('DataPura.create')}}" class="btn btn-sm btn-success">Tambah Data</a> --}}
               </div>
@@ -46,12 +46,12 @@
                   <thead>
                     <tr>
                       {{-- <th>No</th> --}}
-                      <th>Name</th>
-                      <th>Phone</th>
+                      <th>Nama</th>
+                      <th>No HP</th>
                       <th>Email</th>
-                      <th>No Ticket</th>
-                      <th>Treatment Date</th>
-                      <th>Doctor Name</th>
+                      <th>No Tiket</th>
+                      <th>Jadwal Berobat</th>
+                      <th>Nama Dokter</th>
                       {{-- <th>Status</th> --}}
                       {{-- <th>Action</th> --}}
                     </tr>

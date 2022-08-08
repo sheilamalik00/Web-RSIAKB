@@ -3,7 +3,7 @@
 @section('content')
 
 <!--Page Title-->
-<section class="page-title text-center" style="background-image:url({{asset('asset/frontend/images/background/3.jpg')}});">
+<section class="page-title text-center" style="background-image:url({{asset('asset/frontend/tambahan/blog.jpg')}});">
     <div class="container">
         <div class="title-text">
             <h1>{{$blogDetail->title}}</h1>

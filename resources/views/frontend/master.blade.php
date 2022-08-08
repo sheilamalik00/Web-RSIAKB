@@ -21,7 +21,7 @@
 
   <!--Favicon-->
   <link rel="shortcut icon" href="{{ asset('asset/frontend/images/favicon.ico') }}" type="image/x-icon">
-  <link rel="icon" href="{{ asset('asset/frontend/images/favicon.ico') }}" type="image/x-icon">
+  <link rel="icon" href="{{ asset('asset/frontend/tambahan/Logo.ico') }}" type="image/x-icon">
   @yield('scriptCss')
 </head>
 
