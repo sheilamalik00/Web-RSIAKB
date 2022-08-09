@@ -21,7 +21,7 @@
       </div>
     </div>
     <!-- Slider Item -->
-    <div class="slider-item" style="background-image:url({{ asset('asset/frontend/images/slider/slider-bg-2.jpg') }});">
+    <div class="slider-item" style="background-image:url({{ asset('asset/frontend/tambahan/layanan.jpg') }});">
       <div class="container">
         <div class="row">
           <div class="col-12">
