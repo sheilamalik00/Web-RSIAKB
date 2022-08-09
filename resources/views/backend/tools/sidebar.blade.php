@@ -89,7 +89,7 @@
             <a href="{{ route('admin.schedule.index') }}" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
-                Jadwal Prakter Dokter
+                Jadwal Praktek Dokter
                 {{-- <i class="fas fa-angle-left right"></i> --}}
               </p>
             </a>

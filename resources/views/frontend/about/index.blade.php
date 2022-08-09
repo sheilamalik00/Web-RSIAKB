@@ -22,7 +22,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="{{asset('asset/frontend/tambahan/Logo.png')}}" class="responsive" alt="story">
+          <img src="{{asset('asset/frontend/tambahan/Layanan foto kesekian.jpg')}}" class="responsive" alt="story">
         </div>
         <div class="col-md-6">
           <div class="story-content">

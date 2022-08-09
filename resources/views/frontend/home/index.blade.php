@@ -277,7 +277,7 @@
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="x-ray">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="{{ asset('asset/frontend/tambahan/Ruang Operasi.jpeg') }}"
+                  <img class="img-responsive" src="{{ asset('asset/frontend/tambahan/ruang operasi.jpeg') }}"
                     alt="service-image">
                 </div>
                 <div class="col-md-6">
@@ -731,14 +731,14 @@
                   </div>
 
                   <div class="form-group">
-                    <input type="text" name="tgl_lahir" placeholder="Tanggal Lahir" required=""
+                    <input type="date" name="tgl_lahir" placeholder="Tanggal Lahir" required=""
                       id="datepicker">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    {{-- <i class="fa fa-calendar" aria-hidden="true"></i> --}}
                   </div>
                   <div class="form-group">
                     <input type="date" id="tgl_berobat" class="tgl_berobat" name="tgl_berobat"
                       placeholder="Tanggal Berobat" required="">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    {{-- <i class="fa fa-calendar" aria-hidden="true"></i> --}}
                   </div>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">
