@@ -17,6 +17,7 @@ class ScheduleController extends Controller
 {
     public function index()
     {
+
         $dokter = Doctor::with('get_specialist_doctor')->get();
         $blog = Blog::latest()->limit(2)->get();
         $doctor = Doctor::latest()->limit(3)->get();
@@ -38,6 +39,7 @@ class ScheduleController extends Controller
             'poli' => 'required',
             'tgl_berobat' => 'required',
         ]);
+        
         $count = 1;
         $specialist = SpecialistDoctor::find($request->poli);
         $doctor = Doctor::find($request->doctor);

@@ -140,7 +140,7 @@
           },
           success: function(data) {
             $('#doctor').empty();
-            $('#doctor').append('<option>Dokter</option>');
+            $('#doctor').append('<option value="">>Dokter</option>');
             $.each(data, function(key, value) {
               $('#doctor').append('<option value="' + value.id + '">' + value.name + '</option>');
             });
