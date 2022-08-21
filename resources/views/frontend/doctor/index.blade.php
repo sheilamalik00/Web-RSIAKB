@@ -2,7 +2,8 @@
 
 @section('content')
   <!--Page Title-->
-  <section class="page-title text-center" style="background-image:url({{asset('asset/frontend/tambahan/Dokterkami.jpg')}});">
+  <section class="page-title text-center"
+    style="background-image:url({{ asset('asset/frontend/tambahan/Dokterkami.jpg') }});">
     <div class="container">
       <div class="title-text">
         <h1>Dokter Kami</h1>
@@ -17,6 +18,50 @@
   </section>
   <!--End Page Title-->
 
+  <section class="service-section bg-gray section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h3>Jadwal
+          <span>Dokter</span>
+        </h3>
+        {{-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. qui suscipit atque
+          <br>
+          fugiat officia corporis rerum eaque neque totam animi, sapiente culpa. Architecto!
+        </p> --}}
+      </div>
+      <div class="row clearfix">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
   <section class="team-section section">
     <div class="container">
       <div class="row">
@@ -50,10 +95,11 @@
                       <div class="team-person text-center">
                         @if ($itemDoctor->image == null)
                           {{-- images/doctor.svg --}}
-                          <img style="max-height: 275px; max-width:100%"  src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor"
-                            class="img-responsive">
+                          <img style="max-height: 275px; max-width:100%"
+                            src="{{ asset('asset/frontend/images/doctor.svg') }}" alt="doctor" class="img-responsive">
                         @else
-                          <img style="max-height: 275px; max-width:100%"  src="{{ Storage::url('public/doctor/') . $itemDoctor->image }}" alt="doctor"
+                          <img style="max-height: 275px; max-width:100%"
+                            src="{{ Storage::url('public/doctor/') . $itemDoctor->image }}" alt="doctor"
                             class="img-responsive">
                         @endif
                         <h6>{{ $itemDoctor->name }}</h6>
@@ -66,7 +112,7 @@
               </div>
             @endforeach
             <!--End single tab content--
-                  <!--End single tab content-->
+                    <!--End single tab content-->
           </div>
         </div>
       </div>

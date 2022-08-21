@@ -731,8 +731,7 @@
                   </div>
 
                   <div class="form-group">
-                    <input type="date" name="tgl_lahir" placeholder="Tanggal Lahir" required=""
-                      id="datepicker">
+                    <input type="date" name="tgl_lahir" placeholder="Tanggal Lahir" required="">
                     {{-- <i class="fa fa-calendar" aria-hidden="true"></i> --}}
                   </div>
                   <div class="form-group">
