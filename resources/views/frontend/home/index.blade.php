@@ -731,16 +731,17 @@
                   </div>
 
                   <div class="form-group">
-                    <input type="date" name="tgl_lahir" placeholder="Tanggal Lahir" required="">
-                    {{-- <i class="fa fa-calendar" aria-hidden="true"></i> --}}
-                  </div>
-                  <div class="form-group">
-                    <input type="date" id="tgl_berobat" class="tgl_berobat" name="tgl_berobat"
-                      placeholder="Tanggal Berobat" required="">
+                    {{-- <input type="date"  placeholder="Tanggal Lahir" required=""> --}}
+                    <input type="text" name="tgl_lahir" placeholder="Tanggal Lahir" onfocus="(this.type='date')">
                     {{-- <i class="fa fa-calendar" aria-hidden="true"></i> --}}
                   </div>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                      {{-- <input type="date" id="tgl_berobat" class="tgl_berobat" name="tgl_berobat"
+                        placeholder="Tanggal Berobat" required=""> --}}
+                        <input type="text" name="tgl_berobat" placeholder="Tanggal Periksa" onfocus="(this.type='date')">
+                    </div>
                   <div class="form-group">
                     <select name="doctor" id="doctor">
                       <option>Dokter</option>
