@@ -33,7 +33,7 @@
           <div class="video-gallery-item">
             <div class="image-holder">
                 <video class="img-responsive" controls>
-                  <source src="{{$item->getFile()}}" type="video/mp4">
+                 <source src="{{$item->getFile()}}" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               {{-- <img src="images/gallery/video-thumb-01.jpg" class="" alt="video-gallery"> --}}
@@ -49,7 +49,6 @@
           </div>
         </div>
         @endforelse
-
       </div>
     </div>
   </section>

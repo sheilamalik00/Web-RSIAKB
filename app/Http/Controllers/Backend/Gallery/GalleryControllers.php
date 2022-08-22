@@ -67,13 +67,24 @@ class GalleryControllers extends Controller
             'description' => $request->description,
             'url' => $request->url,
         ]);
-        if($request->file('file')){
-            $file = $request->file('file');
-            $file->storeAs('public/gallery/', $file->hashName());
-            //simpan icon database
-            $gallery->update([
-                'file' => $file->hashName()
-            ]);
+        if($request->type==2){
+            if($request->file('file')){
+                $file = $request->file('file');
+                $file->storeAs('public/gallery/', $file->hashName());
+                //simpan icon database
+                $gallery->update([
+                    'image' => $file->hashName()
+                ]);
+            }
+        }else{
+            if ($request->file('file')) {
+                $file = $request->file('file');
+                $file->storeAs('public/gallery/', $file->hashName());
+                //simpan icon database
+                $gallery->update([
+                    'video' => $file->hashName()
+                ]);
+            }
         }
         if($gallery){
             return redirect()->route('admin.gallery.index')->with('success', 'Data berhasil ditambahkan');
