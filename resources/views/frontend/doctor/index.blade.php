@@ -33,30 +33,54 @@
         <table class="table table-hover">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">Nama Dokter</th>
+              <th scope="col">Senin</th>
+              <th scope="col">Selasa</th>
+              <th scope="col">Rabu</th>
+              <th scope="col">Kamis</th>
+              <th scope="col">Jumat</th>
+              <th scope="col">Sabtu</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            @foreach ($doctorjadwal as $item)
+              <tr>
+                <td>{{ $item->name }}</td>
+                @foreach ($item->get_schedule_doctor as $jadwal)
+                  {{-- {{$item->practice_day}} --}}
+                  @if ($jadwal->practice_day == 'Monday')
+                    <td>
+                      <p>{{ $jadwal->practice_time }}</p>
+                    </td>
+                  @endif
+                  @if ($jadwal->practice_day == 'Tuesday')
+                    <td>
+                      <p>{{ $jadwal->practice_time }}</p>
+                    </td>
+                  @endif
+                  @if ($jadwal->practice_day == 'Wednesday')
+                    <td>
+                      <p>{{ $jadwal->practice_time }}</p>
+                    </td>
+                  @endif
+                  @if ($jadwal->practice_day == 'Thursday')
+                    <td>
+                      <p>{{ $jadwal->practice_time }}</p>
+                    </td>
+                  @endif
+                  @if ($jadwal->practice_day == 'Friday')
+                    <td>
+                      <p>{{ $jadwal->practice_time }}</p>
+                    </td>
+                  @endif
+                  @if ($jadwal->practice_day == 'Saturday')
+                    <td>
+                      <p>{{ $jadwal->practice_time }}</p>
+                    </td>
+                  @endif
+                @endforeach
+              </tr>
+            @endforeach
           </tbody>
         </table>
       </div>
@@ -112,7 +136,7 @@
               </div>
             @endforeach
             <!--End single tab content--
-                    <!--End single tab content-->
+                      <!--End single tab content-->
           </div>
         </div>
       </div>

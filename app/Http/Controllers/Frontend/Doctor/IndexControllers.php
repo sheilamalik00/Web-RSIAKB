@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend\Doctor;
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use App\Models\Doctor;
+use App\Models\ScheduleDoctor;
 use App\Models\SpecialistDoctor;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,11 @@ class IndexControllers extends Controller
         $doctor = Doctor::all();
         $specialist = SpecialistDoctor::all();
         $blog = Blog::latest()->limit(2)->get();
-        return view('frontend.doctor.index',compact('doctor','specialist','blog'));
+        $doctorjadwal= Doctor::with('get_schedule_doctor')->with('get_specialist_doctor')->get();
+        // $doctorjadwal = ScheduleDoctor::with('get_doctor.get_specialist_doctor')->groupBy('practice_day')->get();
+        // dd($doctorjadwal);
+        return view('frontend.doctor.index', compact('doctor', 'specialist', 'blog', 'doctorjadwal'));
+        // return view('frontend.doctor.index',compact('doctor','specialist','blog'));
 
         // return view('frontend.doctor.index',compact('doctor'));
     }

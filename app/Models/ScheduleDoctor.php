@@ -33,4 +33,14 @@ class ScheduleDoctor extends Model
         $day = str_replace('6', 'Sabtu', $day);
         return $day;
     }
+
+    public function get_monday()
+    {
+        if($this->practice_day == 'Monday')
+        {
+            return $this->doctor_name;
+        }else{
+            return "-";
+        }
+    }
 }
