@@ -740,7 +740,7 @@
                     <div class="form-group">
                       {{-- <input type="date" id="tgl_berobat" class="tgl_berobat" name="tgl_berobat"
                         placeholder="Tanggal Berobat" required=""> --}}
-                        <input type="text" name="tgl_berobat" placeholder="Tanggal Periksa" onfocus="(this.type='date')">
+                        <input type="text" name="tgl_berobat" id="tgl_berobat" class="tgl_berobat" placeholder="Tanggal Periksa" onfocus="(this.type='date')">
                     </div>
                   <div class="form-group">
                     <select name="doctor" id="doctor">
