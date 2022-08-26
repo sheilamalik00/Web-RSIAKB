@@ -39,7 +39,7 @@ class ScheduleController extends Controller
             'poli' => 'required',
             'tgl_berobat' => 'required',
         ]);
-        
+
         $count = 1;
         $specialist = SpecialistDoctor::find($request->poli);
         $doctor = Doctor::find($request->doctor);

@@ -230,7 +230,7 @@
               <!--Start single tab content-->
               <div class="service-box tab-pane fade in" id="orthopedic">
                 <div class="col-md-6">
-                  <img class="img-responsive" src="{{ asset('asset/frontend/tambahan/Laboratorium.jpeg') }}"
+                  <img class="img-responsive" src="{{asset('asset/frontend/tambahan/Laboratorium1.jpg')}}"
                     alt="service-image">
                 </div>
                 <div class="col-md-6">
@@ -779,7 +779,7 @@
           },
           success: function(data) {
             $('#doctor').empty();
-            $('#doctor').append('<option>Dokter</option>');
+            $('#doctor').append('<option value="">Dokter</option>');
             $.each(data, function(key, value) {
               $('#doctor').append('<option value="' + value.id + '">' + value.name + '</option>');
             });
